@@ -1,0 +1,73 @@
+/*
+Autor = Alejandro Montoya - Cristian Castaño - Diego Rodríguez
+Fecha = 10-dic-2014
+Licencia = gpl30
+Version = 1.0
+Descripcion = 
+*/
+
+/*
+Copyright (C) 2014 Diego Rodríguez Suárez-Bustillo
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#wrapper{
+    width: 1024px;
+    /*height: 1000px;*/
+    margin: 0 auto;
+    background: #666;
+}
+header.main{
+    height: 150px;
+    background: red;
+}
+nav.main{
+    background: #fafafa;
+    height: 10px;
+    display: table-cell;
+    width: 175px;
+}
+#wrapper>div.content{
+    display: table;
+    background: #faa;
+    width: 100%;
+}
+aside{
+    height: 15px;
+    width: 175px;
+    background: brown;
+    display: table-cell;
+}
+/*aside.left{
+    width: 150px;
+}
+aside.right{
+    width: 200px;
+}*/
+section.main{
+    /*height: 600px;*/
+    /*width: 33%;*/
+    /*background: yellow;*/
+    display: table-cell;
+    padding: 15px;
+}
+article{
+    height: 600px;
+    /*background: purple;*/
+}
+footer.main{
+    height: 50px;
+    background: blue;
+}
