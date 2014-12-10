@@ -22,41 +22,105 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+@font-face {
+    font-family: Vibes;
+    src: url(../font/GreatVibes-Regular.otf);
+}
+@font-face {
+    font-family: Ovo;
+    src: url(../font/Ovo-Regular.ttf);
+}
 
 #wrapper{
     width: 1024px;
     /*height: 1000px;*/
     margin: 0 auto;
     background: #666;
+    padding: 1px;
+}
+h1{
+    font-family: Ovo;
+}
+p{
+    font-family: Arial;
 }
 header.main{
+    position: relative;
     height: 150px;
-    background: red;
+    background: ghostwhite;
+    margin-bottom: 10px;
 }
-nav.main{
+header.main h1{
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    font-family: Vibes;
+    font-size: 40px;
+}
+header.main p{
+    position: absolute;
+    top: 95px;
+    left: 193px;
+    font-family: Ovo;
+    font-size: 20px;
+}
+header.main img{
+    position: absolute;
+    left: 45px;
+    height: 150px;
+}
+main{
+    display: table;
+    background: ghostwhite;
+    width: 100%;
+    margin: 0;
+}
+main>nav{
     background: #fafafa;
     height: 10px;
     display: table-cell;
     width: 175px;
 }
-#wrapper>div.content{
-    display: table;
-    background: #faa;
-    width: 100%;
+main>nav ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: Ovo;
+    font-weight: bold;
+}
+main>nav ul li{
+    background-color: red;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 170px 12px;
+    padding: 10px;
+    margin: 10px auto;
+    transition: background .3s;
+}
+main>nav ul li:hover, main>nav ul li.active{
+    background: green;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 160px 12px;
+}
+main>nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: text-decoration .3s;
+}
+main>nav ul li a:hover{
+    text-decoration: underline;
+}
+main>nav ul li a:visited{
+    color: goldenrod;
 }
 aside{
     height: 15px;
     width: 175px;
-    background: brown;
+    background: ghostwhite;
     display: table-cell;
 }
-/*aside.left{
-    width: 150px;
-}
-aside.right{
-    width: 200px;
-}*/
-section.main{
+main>section{
     /*height: 600px;*/
     /*width: 33%;*/
     /*background: yellow;*/
@@ -69,5 +133,5 @@ article{
 }
 footer.main{
     height: 50px;
-    background: blue;
+    background: ghostwhite;
 }
