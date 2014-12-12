@@ -30,13 +30,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     font-family: Ovo;
     src: url(../font/Ovo-Regular.ttf);
 }
-
+body{
+    /*background: #F2E6D0;*/
+}
 #wrapper{
     width: 1024px;
     /*height: 1000px;*/
     margin: 0 auto;
-    background: #666;
-    padding: 1px;
+    background: #330066;
+    /*padding: 1px;*/
+    border-left: solid 5px #2B6646;
 }
 h1{
     font-family: Ovo;
@@ -48,7 +51,7 @@ header.main{
     position: relative;
     height: 150px;
     background: ghostwhite;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 header.main h1{
     position: absolute;
@@ -89,7 +92,7 @@ main>nav ul{
     font-weight: bold;
 }
 main>nav ul li{
-    background-color: red;
+    background-color: #2B6646;
     background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     background-position: 170px 12px;
@@ -98,7 +101,7 @@ main>nav ul li{
     transition: background .3s;
 }
 main>nav ul li:hover, main>nav ul li.active{
-    background: green;
+    background: #03738C;
     background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     background-position: 160px 12px;
