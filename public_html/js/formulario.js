@@ -57,7 +57,7 @@ function validar() {
     if (validarNombre() && validarEmail() && validarTelefonos()) {
         return true;
     }
-    document.getElementById("error").style.display = "table-row";
+    document.getElementById("error").className = 'open';
     return false;
 }
 /**

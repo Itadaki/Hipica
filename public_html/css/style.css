@@ -30,8 +30,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     font-family: Ovo;
     src: url(../font/Ovo-Regular.ttf);
 }
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+*{margin:0;padding:0;}
 body{
     /*background: #F2E6D0;*/
+    font-family: OpenSans;
 }
 #wrapper{
     width: 1024px;
@@ -39,14 +45,34 @@ body{
     margin: 0 auto;
     background: white;
     /*padding: 1px;*/
-    border-left: solid 5px #2B6646;
+    /*border-left: solid 5px #2B6646;*/
+    border-left: solid 5px #231f20; /*Revisar los bordes porque cuentan en el tamaño*/
+    border-right: solid 5px #231f20; /*1024 +5 +5*/
 }
 h1{
     font-family: Ovo;
 }
 p{
-    font-family: Arial;
+    font-size: 14px;
 }
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #D96704;
+}
+a:hover{
+    text-decoration: none;
+    font-weight: normal;
+}
+a:visited{
+    
+}
+/*a:before{
+    content: '·';
+}
+a:after{
+    content: '·';
+}*/
 header.main{
     position: relative;
     height: 150px;
@@ -94,31 +120,26 @@ main>nav ul{
     font-family: Ovo;
     font-weight: bold;
 }
-main>nav ul li{
-    background-color: #2B6646;
-    background-image: url(../img/arrow.png);
-    background-repeat: no-repeat;
-    background-position: 170px 12px;
-    padding: 10px;
-    margin: 10px auto;
-    transition: background .3s;
-}
-main>nav ul li:hover, main>nav ul li.active{
-    background: #03738C;
-    background-image: url(../img/arrow.png);
-    background-repeat: no-repeat;
-    background-position: 160px 12px;
-}
 main>nav ul li a{
-    color: white;
+    color: black;
+    /*background: url(../img/bgmenu_old.png) no-repeat;*/
+    background: url(../img/bgmenu.png) no-repeat;
+    background-position: -200px 0px;
+    transition: background .5s, color .5s;
     text-decoration: none;
-    transition: text-decoration .3s;
+    display: block;/*se convierte en bloque y le afecta width y height*/
+    height: 40px;
+    line-height: 40px; /*Altura de cada linea = altura = alineado vertical*/
+    width: 175px;
 }
-main>nav ul li a:hover{
-    text-decoration: underline;
+main>nav ul li a:hover, main>nav ul li a.active{
+    /*text-decoration: underline;*/
+    font-weight: bold;
+    color:white;
+    background-position: 0px 0px;
 }
 main>nav ul li a:visited{
-    color: goldenrod;
+    /*color: goldenrod;*/
 }
 aside{
     height: 15px;
@@ -135,14 +156,13 @@ main>section{
     padding: 15px;
 }
 article{
-    height: 600px;
+    min-height: 600px;
     /*background: purple;*/
 }
 footer.main{
     height: 50px;
     background: ghostwhite;
-    margin-left:50px;
-    font-family: Ovo;
+    text-align: center;
 }
 #banner{
     border: 1px solid;
