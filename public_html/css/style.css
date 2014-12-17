@@ -37,7 +37,7 @@ body{
     width: 1024px;
     /*height: 1000px;*/
     margin: 0 auto;
-    background: #330066;
+    background: white;
     /*padding: 1px;*/
     border-left: solid 5px #2B6646;
 }
@@ -138,6 +138,8 @@ article{
 footer.main{
     height: 50px;
     background: ghostwhite;
+    margin-left:50px;
+    font-family: Ovo;
 }
 #banner{
     border: 1px solid;
