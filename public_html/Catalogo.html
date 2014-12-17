@@ -26,43 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TODO supply a title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="css/style.css" />
-            <script>
-              function muestraOculta(n) {
-
-                parrafo = document.getElementById('contenidos_' + n);
-
-                enlace = document.getElementById('enlace_' + n);
-
-                
-                switch (parrafo.style.display) {
-                    case 'none':
-                        parrafo.style.display = 'block';
-
-
-                        break;
-                    case '': //sin esto no haria nada porque la primera vez la propiedad display no tiene ningun valor
-                    case 'block':
-                        parrafo.style.display = 'none';
-                        
-
-                        break;
-                }
-
-
-            }
-         var ventana;
-        function visualizaVentana(){
-         ventana=window.open("popup_licencia.html","","width=500, height=300");
-               
-    }
-                
-            </script>
-  </head>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
     <body><div style="position: absolute; height: 221px; width: 100%; background: #A0A603; top:0px; z-index: -1;"></div>
         <div id="wrapper">
             <header class="main">
@@ -70,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <p>Escuela de hípica</p>
                 <img src="img/logo.png" alt="Logo" title="Ecuestria" />
             </header>
-            
+
             <main>
                 <!--<aside></aside>-->
                 <nav>
@@ -95,7 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                             Las diferentes técnicas que se llevan a cabo sobre el caballo permiten adaptar los ejercicios a cada tipo de discapacidad, obteniendo<br>
                             con ello un buen rendimiento en los ejercicios, ya que con el simple movimiento al paso se reciben 110 estímulos por minuto.<br>
                             Esto, unido a la mejora emocional que supone el trato con el caballo, hace de la hipoterapia o de la equitación adaptada una inmejorable <br>
-                                actividad, que además puede ser compartida por toda la familia en un entorno sano y natural</p>
+                            actividad, que además puede ser compartida por toda la familia en un entorno sano y natural</p>
                         <a id="enlace_3" href="#" onclick="muestraOculta('3')">Cumpleaños</a><br>
                         <p  id="contenidos_3" style="display: none">Como novedad este año comenzaremos con las fiestas de cumpleaños para los más pequeños de la familia, a todos aquellos que les guste el mundo del <br>
                             caballo, a todos los que quieran realizar una fiesta diferente junto con todos sus amigos....esta es la opción.
@@ -119,7 +89,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <aside>
                     <h1>Publicidad</h1>
                     <div id="banner" >
-                        
+
                     </div>
                 </aside>
             </main>

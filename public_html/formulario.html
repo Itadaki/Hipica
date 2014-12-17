@@ -31,13 +31,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="" rel="stylesheet" />
         <style type="text/css">
-            #error{
-                /*display: none;*/
-                
+            tr div {
                 background: red;
                 color: white;
                 font-weight: bold;
-                transition: display;
+                text-align: center;
+                max-height:0;
+                transition: max-height 2s ease-in-out;
+            }
+            tr.open div {
+                max-height: 100px;
+            }
+            .col_izq{
+                text-align: right;
             }
         </style>
     </head>
@@ -46,35 +52,35 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             <table border="0">
                 <tbody>
                     <tr>
-                        <td>Nombre</td>
-                        <td><input type="text" name="nombre" id="nombre" class="form_input" value="" size="15" required/></td>
+                        <td class="col_izq">Nombre</td>
+                        <td><input type="text" name="nombre" id="nombre" class="form_input" value="" size="18" required/></td>
                     </tr>
                     <tr>
-                        <td>Apellido 1</td>
-                        <td><input type="text" name="apellido1" id="apellido1" class="form_input" value=""  size="15" required/></td>
+                        <td class="col_izq">Apellido 1</td>
+                        <td><input type="text" name="apellido1" id="apellido1" class="form_input" value=""  size="18" required/></td>
                     </tr>
                     <tr>
-                        <td>Apellido 2</td>
-                        <td><input type="text" name="apellido2" id="apellido2" class="form_input" value=""  size="15" required/></td>
+                        <td class="col_izq">Apellido 2</td>
+                        <td><input type="text" name="apellido2" id="apellido2" class="form_input" value=""  size="18" required/></td>
                     </tr>
                     <tr>
-                        <td>Email</td>
-                        <td><input type="email" name="email" id="email" class="form_input" value=""  size="15" required/></td>
+                        <td class="col_izq">Email</td>
+                        <td><input type="email" name="email" id="email" class="form_input" value=""  size="18" required/></td>
                     </tr>
                     <tr>
-                        <td>Teléfono fijo</td>
-                        <td><input type="text" name="fijo" id="fijo" class="form_input" value=""  size="15" required/></td>
+                        <td class="col_izq">Teléfono fijo</td>
+                        <td><input type="text" name="fijo" id="fijo" class="form_input" value=""  size="18" required/></td>
                     </tr>
                     <tr>
-                        <td>Teléfono móvil</td>
-                        <td><input type="text" name="movil" id="movil" class="form_input" value=""  size="15" required/></td>
+                        <td class="col_izq">Teléfono móvil</td>
+                        <td><input type="text" name="movil" id="movil" class="form_input" value=""  size="18" required/></td>
                     </tr>
                     <tr>
-                        <td>Descripción</td>
-                        <td><textarea name="descripcion" id="descripcion" class="form_input" rows="4" cols="17" required></textarea></td>
+                        <td class="col_izq">Descripción</td>
+                        <td><textarea name="descripcion" id="descripcion" class="form_input" rows="4" cols="19" required></textarea></td>
                     </tr>
                     <tr>
-                        <td>Asunto</td>
+                        <td class="col_izq">Asunto</td>
                         <td>
                             <select name="asunto" id="asunto" class="form_input" required>
                                 <option></option>
@@ -86,13 +92,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="text-align: center">
                             <input type="checkbox" name="terminos" id="terminos" value="" onchange="activarEnvio()" required disabled/>
                             <label for="terminos">Acepto los Términos y Condiciones</label>
                         </td>
                     </tr>
                     <tr id="error">
-                        <td colspan="2">Algúno de los campos es incorrecto</td>
+                        <td colspan="2" ><div>Algúno de los campos es incorrecto</div></td>
                     </tr>
                     <tr>
                         <td colspan="2"><input type="submit" id="enviar" value="Enviar" disabled /></td>
