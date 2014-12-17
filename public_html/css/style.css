@@ -50,9 +50,12 @@ p{
 header.main{
     position: relative;
     height: 150px;
-    background: ghostwhite;
+   /* background-image: url("../img/2.jpg");*/
+   /* background-size:auto auto;*/
+
     /*margin-bottom: 10px;*/
 }
+
 header.main h1{
     position: absolute;
     top: 50px;
