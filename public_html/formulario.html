@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+Autor = Diego Rodríguez Suárez-Bustillo
+Fecha = 16-dic-2014
+Licencia = gpl30 
+Version = 1.0
+Descripcion = 
+-->
+
+<!--
+Copyright (C) 2014 Diego Rodríguez Suárez-Bustillo
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="" rel="stylesheet" />
+        <style type="text/css">
+            #error{
+                /*display: none;*/
+                
+                background: red;
+                color: white;
+                font-weight: bold;
+                transition: display;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="contacto" id="contacto" method="POST" oninput="activarTerminos()" onsubmit="return validar()">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" name="nombre" id="nombre" class="form_input" value="" size="15" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Apellido 1</td>
+                        <td><input type="text" name="apellido1" id="apellido1" class="form_input" value=""  size="15" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Apellido 2</td>
+                        <td><input type="text" name="apellido2" id="apellido2" class="form_input" value=""  size="15" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" id="email" class="form_input" value=""  size="15" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono fijo</td>
+                        <td><input type="text" name="fijo" id="fijo" class="form_input" value=""  size="15" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono móvil</td>
+                        <td><input type="text" name="movil" id="movil" class="form_input" value=""  size="15" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Descripción</td>
+                        <td><textarea name="descripcion" id="descripcion" class="form_input" rows="4" cols="17" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Asunto</td>
+                        <td>
+                            <select name="asunto" id="asunto" class="form_input" required>
+                                <option></option>
+                                <option>Acerca de actividades</option>
+                                <option>Sobre los precios</option>
+                                <option>Cómo llegar</option>
+                                <option>Otros</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="terminos" id="terminos" value="" onchange="activarEnvio()" required disabled/>
+                            <label for="terminos">Acepto los Términos y Condiciones</label>
+                        </td>
+                    </tr>
+                    <tr id="error">
+                        <td colspan="2">Algúno de los campos es incorrecto</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" id="enviar" value="Enviar" disabled /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <script type="text/javascript" src="js/formulario.js"></script>
+    </body>
+</html>
