@@ -43,7 +43,7 @@ body{
     width: 1024px;
     /*height: 1000px;*/
     margin: 0 auto;
-    background: #330066;
+    background: white;
     /*padding: 1px;*/
     /*border-left: solid 5px #2B6646;*/
     border-left: solid 5px #231f20; /*Revisar los bordes porque cuentan en el tamaño*/
