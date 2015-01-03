@@ -29,8 +29,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <title>Ecuestria - Escuela de hípica</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/lightbox.css" />
+        <link rel="stylesheet" href="css/galeria.css" />
         <link rel="stylesheet" href="css/style.css" />
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
     </head>
     <body>
         <div id="embellecedor"></div>
@@ -40,32 +44,41 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <p>Escuela de hípica</p>
                 <img src="img/logo.png" alt="Logo" title="Ecuestria" />
             </header>
-            
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home">Home</a></li><li><a href="catalogo.html" title="Catálogo">Catálogo</a></li><li><a href="galeria.html" title="Galería" class="activo">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
+                </ul>
+            </nav>
             <main>
-                <!--<aside></aside>-->
-                <nav>
-                    <ul>
-                        <li><a href="index.html" title="Home">Home</a></li>
-                        <li><a href="catalogo.html" title="Catálogo">Catálogo</a></li>
-                        <li><a href="galeria.html" title="Galería" class="active">Galería</a></li>
-                        <li><a href="formulario.html" title="Contacta">Contacta</a></li>
-                    </ul>
-                </nav>
                 <section>
                     <article>
+                        <!-- Contenido -->
                         <h1>Galeria de nuestras fotos</h1>
-                        <p></p>
+                        <div id="fotos">
+                            <a href="img/gallery/1.jpg" data-lightbox="galeria" data-title="Paseo"><img src="img/gallery/thumbnails/1.jpg" title="Paseo" alt="Paseo"/></a>
+                            <a href="img/gallery/2.jpg" data-lightbox="galeria" data-title="Templanza"><img src="img/gallery/thumbnails/2.jpg" title="Templanza" alt="Templanza"/></a>
+                            <a href="img/gallery/3.jpg" data-lightbox="galeria" data-title="Curiosidad"><img src="img/gallery/thumbnails/3.jpg" title="Curiosidad" alt="Curiosidad"/></a>
+                            <a href="img/gallery/4.jpg" data-lightbox="galeria" data-title="Soledad"><img src="img/gallery/thumbnails/4.jpg" title="Soledad" alt="Soledad"/></a>
+                            <a href="img/gallery/5.jpg" data-lightbox="galeria" data-title="Sueño"><img src="img/gallery/thumbnails/5.jpg" title="Sueño" alt="Sueño"/></a>
+                            <a href="img/gallery/6.jpg" data-lightbox="galeria" data-title="Procesión"><img src="img/gallery/thumbnails/6.jpg" title="Procesión" alt="Procesión"/></a>
+                            <a href="img/gallery/7.jpg" data-lightbox="galeria" data-title="Tarde"><img src="img/gallery/thumbnails/7.jpg" title="Tarde" alt="Tarde"/></a>
+                            <a href="img/gallery/8.jpg" data-lightbox="galeria" data-title="Curiosidad"><img src="img/gallery/thumbnails/8.jpg" title="Curiosidad" alt="Curiosidad"/></a>
+                            <a href="img/gallery/9.jpg" data-lightbox="galeria" data-title="Cercanía"><img src="img/gallery/thumbnails/9.jpg" title="Cercanía" alt="Cercanía"/></a>
+                            <a href="img/gallery/10.jpg" data-lightbox="galeria" data-title="Distancia"><img src="img/gallery/thumbnails/10.jpg" title="Distancia" alt="Distancia"/></a>
+                            <a href="img/gallery/11.jpg" data-lightbox="galeria" data-title="Cariño"><img src="img/gallery/thumbnails/11.jpg" title="Cariño" alt="Cariño"/></a>
+                            <a href="img/gallery/12.jpg" data-lightbox="galeria" data-title="Compañia"><img src="img/gallery/thumbnails/12.jpg" title="Compañia" alt="Compañia"/></a>
+                            <a href="img/gallery/13.jpg" data-lightbox="galeria" data-title="Hermandad"><img src="img/gallery/thumbnails/13.jpg" title="Hermandad" alt="Hermandad"/></a>
+                            <a href="img/gallery/14.jpg" data-lightbox="galeria" data-title="Adiós"><img src="img/gallery/thumbnails/14.jpg" title="Adiós" alt="Adiós"/></a>
+                        </div>
+                        <!-- FIN Contenido -->
                     </article>
                 </section>
-                <aside>
-                    <h1>Publicidad</h1>
-                    <div id="banner" >
-                        
-                    </div>
-                </aside>
+                <div id="banner" >
+
+                </div>
             </main>
             <footer class="main">
-                <a href="#" title="Contacto">Contacto</a> - <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a><br>
+                <a href="formulario.html" title="Contacto">Contacto</a> - <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a><br>
                 © Alejandro Montoya - Cristian Castaño - Diego Rodríguez 
             </footer>
         </div>

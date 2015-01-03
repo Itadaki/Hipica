@@ -30,6 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/catalogo.css" />
         <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
@@ -40,61 +41,60 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <p>Escuela de hípica</p>
                 <img src="img/logo.png" alt="Logo" title="Ecuestria" />
             </header>
-
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home">Home</a></li><li><a href="catalogo.html" title="Catálogo" class="activo">Catálogo</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
+                </ul>
+            </nav>
             <main>
-                <!--<aside></aside>-->
-                <nav>
-                    <ul>
-                        <li><a href="index.html" title="Home">Home</a></li>
-                        <li><a href="catalogo.html" title="Catálogo" class="active">Catálogo</a></li>
-                        <li><a href="galeria.html" title="Galería">Galería</a></li>
-                        <li><a href="formulario.html" title="Contacta">Contacta</a></li>
-                    </ul>
-                </nav>
                 <section>
                     <article>
-                        <h1>Catálogo</h1>
-                        <a id="enlace_1" href="#" onClick="muestraOculta('1')">Iniciación a la doma clásica y el salto</a> <br>
-                        <p  id="contenidos_1" style="display: none">En la escuela se imparten clases a todos los niveles. Disponemos de clases con ponis A para los mas pequeños <br>
-                            ( a partir de 4 años) y de ponis B  (niños a partir de 12 años). También se dan clases a adultos, utilizando caballos <br>
-                            y donde podrán disfrutar todos aquellos que quieran descubrir este maravilloso mundo del caballo.</p>
-                        <a id="enlace_2" href="#" onclick="muestraOculta('2')">Equitacion adaptada</a><br>
-                        <p  id="contenidos_2" style="display: none">La terapia a través del caballo supone un antes y un después en la vida de quien lo prueba, ya que la relación que se establece <br>
-                            entre la persona y su caballo es única y muy positiva para su autoestima.
-
-                            Las diferentes técnicas que se llevan a cabo sobre el caballo permiten adaptar los ejercicios a cada tipo de discapacidad, obteniendo<br>
-                            con ello un buen rendimiento en los ejercicios, ya que con el simple movimiento al paso se reciben 110 estímulos por minuto.<br>
-                            Esto, unido a la mejora emocional que supone el trato con el caballo, hace de la hipoterapia o de la equitación adaptada una inmejorable <br>
-                            actividad, que además puede ser compartida por toda la familia en un entorno sano y natural</p>
-                        <a id="enlace_3" href="#" onclick="muestraOculta('3')">Cumpleaños</a><br>
-                        <p  id="contenidos_3" style="display: none">Como novedad este año comenzaremos con las fiestas de cumpleaños para los más pequeños de la familia, a todos aquellos que les guste el mundo del <br>
-                            caballo, a todos los que quieran realizar una fiesta diferente junto con todos sus amigos....esta es la opción.
-
-                            Cualquier dia de la semana, ya sean festivos o fines de semana; con merienda incluida, les organizaremos una fiesta que los pequeños jamás olvidarán tendrán la posibilidad de<br>
-                            montar en pony, prepararemos juegos como la carrera de sacos, de esos juegos que antes tanto jugabamos y ahora se estan quedando olvidados...; no hay <br>
-                            problema de edad simplemente y si te interesa no dudes en contactar con nosotros, te atenderemos sin problema y te explicaremos todo aquello que necesites<br>
-                            saber, ya sabes!! no dudes en llamarnos lo pasarán Genial!!</p>
-                        <a id="enlace_4" href="#" onclick="muestraOculta('4')">Visitas guiadas</a><br>
-                        <p  id="contenidos_4" style="display: none">Durante todo el año ofrecemos visitas guiadas en nuestro centro a todos aquellos colegios que estén interesados en acercar<br>
-                            a sus alumnos al mundo del caballo.</p>
-                        <a id="enlace_5" href="#" onclick="muestraOculta('5')">Ciclo de formación profesional</a><br>
-                        <p  id="contenidos_5" style="display: none">A través de un convenio con el Instituto de enseñanza Superior (IES) Terra de Turonio de Gondomar ,impartimos la formación<br>
-                            de una de las asignaturas de un ciclo medio llamado Monitor de Actividades Fisico-Deportivas no medio natural. La asignatura<br>
-                            que realizamos en el club es conducción de rutas a caballo , donde se estudia todo lo relacionado con el cuidado equino, limpieza , <br>
-                            monta y control del caballo en diferentes terrenos.
-
+                        <!-- Contenido -->
+                        <h1>Catálogo de servicios</h1>
+                        <div class="titulo top"></div>
+                        
+                        <div class="titulo" onClick="show(1)"><span>Iniciación a la doma clásica y el salto</span></div>
+                        <div class="catalogo c1">
+                            <img src="img/gallery/thumbnails/13.jpg" alt="Foto" class="left" />
+                            <p>En la escuela se imparten clases a todos los niveles.<br><br>
+                            Disponemos de clases con ponis A para los mas pequeños (a partir de 4 años) y de ponis B (niños a partir de 12 años).<br><br>
+                            También se dan clases a adultos, utilizando caballos y donde podrán disfrutar todos aquellos que quieran descubrir este maravilloso mundo del caballo.</p>
+                        </div>
+                        
+                        <div class="titulo" onclick="show(2)">Equitación adaptada</div>
+                        <div class="catalogo c2">
+                            <p>La terapia a través del caballo supone un antes y un después en la vida de quien lo prueba, ya que la relación que se establece entre la persona y su caballo es única y muy positiva para su autoestima.<br>
+                            Las diferentes técnicas que se llevan a cabo sobre el caballo permiten adaptar los ejercicios a cada tipo de discapacidad, obteniendo con ello un buen rendimiento en los ejercicios, ya que con el simple movimiento al paso se reciben 110 estímulos por minuto.<br>
+                            Esto, unido a la mejora emocional que supone el trato con el caballo, hace de la hipoterapia o de la equitación adaptada una inmejorable actividad, que además puede ser compartida por toda la familia en un entorno sano y natural</p>
+                        </div>
+                        
+                        <div class="titulo" onclick="show(3)">Cumpleaños</div>
+                        <div class="catalogo c3">
+                            <p>Como novedad este año comenzaremos con las fiestas de cumpleaños para los más pequeños de la familia, a todos aquellos que les guste el mundo del caballo, a todos los que quieran realizar una fiesta diferente junto con todos sus amigos....esta es la opción.<br><br>
+                            Cualquier dia de la semana, ya sean festivos o fines de semana; con merienda incluida, les organizaremos una fiesta que los pequeños jamás olvidarán tendrán la posibilidad de montar en pony, prepararemos juegos como la carrera de sacos, de esos juegos que antes tanto jugabamos y ahora se estan quedando olvidados...; no hay problema de edad simplemente y si te interesa no dudes en contactar con nosotros, te atenderemos sin problema y te explicaremos todo aquello que necesites saber, ya sabes!! no dudes en llamarnos lo pasarán Genial!!</p>
+                        </div>
+                        
+                        <div class="titulo" onclick="show(4)">Visitas guiadas</div>
+                        <div class="catalogo c4">
+                            <p>Durante todo el año ofrecemos visitas guiadas en nuestro centro a todos aquellos colegios que estén interesados en acercar a sus alumnos al mundo del caballo.</p>
+                        </div>
+                        
+                        <div class="titulo" onclick="show(5)">Ciclo de formación profesional</div>
+                        <div class="catalogo c5">
+                            <p>A través de un convenio con el Instituto de enseñanza Superior (IES) Terra de Turonio de Gondomar ,impartimos la formación de una de las asignaturas de un ciclo medio llamado Monitor de Actividades Fisico-Deportivas no medio natural. La asignatura que realizamos en el club es conducción de rutas a caballo , donde se estudia todo lo relacionado con el cuidado equino, limpieza, monta y control del caballo en diferentes terrenos.<br><br>
                             Este ciclo termina con unas prácticas de 3 meses en empresas de actividades de deporte y aventura.</p>
+                        </div>
+                        
+                        <div class="titulo bottom"></div>
+                    <!-- FIN Contenido -->
                     </article>
                 </section>
-                <aside>
-                    <h1>Publicidad</h1>
-                    <div id="banner" >
+                <div id="banner" >
 
-                    </div>
-                </aside>
+                </div>
             </main>
             <footer class="main">
-                <a href="#" title="Contacto">Contacto</a> - <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a><br>
+                <a href="formulario.html" title="Contacto">Contacto</a> - <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a><br>
                 © Alejandro Montoya - Cristian Castaño - Diego Rodríguez 
             </footer>
         </div>

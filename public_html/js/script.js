@@ -25,16 +25,27 @@
 
 
 function verTerminos() {
-    window.open("popup_licencia.html", "Licencia", "width=500, height=300");
+    window.open("popup_licencia.html", "Licencia", "width=600, height=450, top=100px, left=200px");
 }
-function muestraOculta(n) {
-    var parrafo = document.getElementById('contenidos_' + n);
-    switch (parrafo.style.display) {
-        case 'none':
-            parrafo.style.display = 'block';
+var abierto = 'c1';
+function showw(n) {
+    var parrafo = document.getElementsByClassName('c' + n)[0];
+    switch (parrafo.style.maxHeight) {
+        case '1000px':
+            parrafo.style.maxHeight = '0';
             break;
         default:
-            parrafo.style.display = 'none';
+            document.getElementsByClassName(abierto)[0].style.maxHeight = '0';
+            parrafo.style.maxHeight = '1000px';
+            abierto = 'c' + n;
             break;
+    }
+}
+function show(n) {
+    var parrafo = document.getElementsByClassName('c' + n)[0];
+    if (/^catalogo c\d$/.test(parrafo.className)) {
+        parrafo.className += ' abierto';
+    } else {
+        parrafo.className = parrafo.className.replace(' abierto', '');
     }
 }

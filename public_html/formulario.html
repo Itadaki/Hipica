@@ -23,6 +23,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
+
 <html>
     <head>
         <title>Ecuestria - Escuela de hípica</title>
@@ -41,19 +42,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <p>Escuela de hípica</p>
                 <img src="img/logo.png" alt="Logo" title="Ecuestria" />
             </header>
-
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home" class="active">Home</a></li>
+                    <li><a href="catalogo.html" title="Catálogo">Catálogo</a></li>
+                    <li><a href="galeria.html" title="Galería">Galería</a></li>
+                    <li><a href="formulario.html" title="Contacta">Contacta</a></li>
+                </ul>
+            </nav>
             <main>
-                <!--<aside></aside>-->
-                <nav>
-                    <ul>
-                        <li><a href="index.html" title="Home">Home</a></li>
-                        <li><a href="catalogo.html" title="Catálogo">Catálogo</a></li>
-                        <li><a href="galeria.html" title="Galería">Galería</a></li>
-                        <li><a href="formulario.html" title="Contacta" class="active">Contacta</a></li>
-                    </ul>
-                </nav>
                 <section>
                     <article>
+                        <!-- Contenido -->
                         <h1>Contacta con nosotros</h1>
                         <form name="contacto" id="contacto" method="POST" oninput="activarTerminos()" onsubmit="return validar()">
                             <table border="0">
@@ -101,7 +101,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     <tr>
                                         <td colspan="2">
                                             <input type="checkbox" name="terminos" id="terminos" value="" onchange="activarEnvio()" required disabled/>
-                                            <label for="terminos">Acepto los Términos y Condiciones</label>
+                                            <label for="terminos">Acepto los <a href="#" title="Terminos Licencia" onClick="alert()">Términos y Condiciones</a></label>
                                         </td>
                                     </tr>
                                     <tr id="error">
@@ -113,15 +113,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 </tbody>
                             </table>
                         </form>
+                    <!-- FIN Contenido -->
                     </article>
                 </section>
-                <!-- mal rollo usar aside para publi -->
-                <aside>
-                    <h1>Publicidad</h1>
-                    <div id="banner" >
+                <div id="banner" >
 
-                    </div>
-                </aside>
+                </div>
             </main>
             <footer class="main">
                 <a href="#" title="Contacto">Contacto</a> - <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a><br>
