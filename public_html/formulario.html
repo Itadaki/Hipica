@@ -44,10 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.html" title="Home" class="active">Home</a></li>
-                    <li><a href="catalogo.html" title="Catálogo">Catálogo</a></li>
-                    <li><a href="galeria.html" title="Galería">Galería</a></li>
-                    <li><a href="formulario.html" title="Contacta">Contacta</a></li>
+                    <li><a href="index.html" title="Home">Home</a></li><li><a href="catalogo.html" title="Catálogo">Catálogo</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta" class="activo">Contacta</a></li>
                 </ul>
             </nav>
             <main>
@@ -104,7 +101,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     <tr>
                                         <td colspan="2">
                                             <input type="checkbox" name="terminos" id="terminos" value="" onchange="activarEnvio()" required disabled/>
-                                            <label for="terminos">Acepto los <a href="#" title="Terminos Licencia" onClick="alert()">Términos y Condiciones</a></label>
+                                            <label for="terminos">Acepto los <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos y Condiciones</a></label>
                                         </td>
                                     </tr>
                                     <tr id="error">
