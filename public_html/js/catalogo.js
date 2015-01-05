@@ -1,9 +1,9 @@
 /* 
- * Autor = Alejandro Montoya
+ * Autor = Diego Rodríguez Suárez-Bustillo
  * Fecha = 17-dic-2014
  * Licencia = gpl30
  * Version = 1.0
- * Descripcion = Contiene metodos comunes a toda la web
+ * Descripcion = Contiene metodos para el catalogo
  */
 
 /* 
@@ -23,9 +23,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 /**
- * @description Abre un popup con el contenido de la licencia
+ * @description Abre y cierra los bloques de contenido del catalogo
+ * @param {Integer} n
  */
-function verTerminos() {
-    window.open("popup_licencia.html", "Licencia", "width=600, height=450, top=100px, left=200px");
+function show(n) {
+    var clase= ' abierto';
+    var parrafo = document.getElementsByClassName('c' + n)[0];
+    if (/^catalogo c\d$/.test(parrafo.className)) {
+        parrafo.className += clase;
+    } else {
+        parrafo.className = parrafo.className.replace(clase, '');
+    }
 }

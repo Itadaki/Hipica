@@ -3,7 +3,7 @@ Autor = Alejandro Montoya - Cristian CastaÃ±o - Diego RodrÃ­guez
 Fecha = 10-dic-2014
 Licencia = gpl30
 Version = 1.0
-Descripcion = Estilos comunes a todas las pÃ¡ginas
+Descripcion = Estilos comunes a todas las paginas
 */
 
 /*
@@ -37,6 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *{margin:0;padding:0;}
 body{
     font-family: OpenSans;
+    background: url(../img/body.png) no-repeat fixed top;
 }
 #wrapper{
     width: 1024px;
@@ -45,41 +46,26 @@ body{
     background: white;
     position: relative;
 }
-#embellecedor{
-    position: fixed; 
-    height: 240px; 
-    width: 100%; 
-    background: #A0A603; 
-    background: url(../img/embellecedor.jpg);
-    background-position: 0 -900px;
-    background-size: 50%;
-    top:0px; 
-    z-index: -1;
-}
-h1{
-    font-family: Ovo;
-}
-p{
-    font-size: 14px;
-}
+h1{font-family: Ovo;}
+p{font-size: 14px;}
 a{
     text-decoration: none;
     font-weight: bold;
-    color: #6b9da4;
+    color: #84aa5b;
 }
 a:hover{
     text-decoration: none;
     font-weight: normal;
 }
 a:visited{
-
+    color: #84AA5B;
 }
 header.main{
     position: relative;
     height: 200px;
-    background-image:  url('../img/ft.jpg');
+    background: #6B9DA4 url('../img/ft.jpg');
     background-position: 0 -330px;
-    color: white;
+    color: #fafbf5;
     text-shadow: 0 0 3px black;
 }
 header.main h1{
@@ -104,7 +90,6 @@ header.main img{
     -webkit-filter: drop-shadow(0 0 1px white);
     filter: drop-shadow(0 0 1px white);
 }
-
 nav{
     background: #e9f1d7;
     height: 40px;
@@ -115,29 +100,24 @@ nav ul{
     font-family: Ovo;
     font-weight: bold;
 }
-nav li {
-    display: inline;
-}
+nav li {display: inline;}
 nav ul li a{
-    color: black;
+    color: black !important; /*Previene del cambio de color por :visited*/
     background-position: -200px 0px;
     transition: background .5s, color .5s;
     text-decoration: none;
     display: inline-block;/*se convierte en bloque y le afecta width y height*/
     height: 40px;
-    line-height: 40px; /*Altura de cada linea = altura = alineado vertical*/
+    line-height: 40px; /*Altura de cada linea == altura == alineado vertical*/
     width: 175px;
     /*margin-left: -5px;*/ /*Revisar porque necesito este ajuste innecesario*/
     /*Era por los espacios que deja el IDE entre lineas*/
 }
 nav ul li a:hover, nav ul li a.activo{
     font-weight: bold;
-    color:white;
+    color:white !important; /*Previene del cambio de color por :visited*/
     background-position: 0px 0px;
     background: #6b9da4;
-}
-nav ul li a:visited{
-    /*color: goldenrod;*/
 }
 aside{
     height: 15px;
