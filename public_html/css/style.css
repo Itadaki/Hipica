@@ -86,27 +86,29 @@ header.main{
     background-image:  url('../img/ft.jpg');
     background-position: 0 -330px;
     color: white;
+    text-shadow: 0 0 3px black;
 }
 header.main h1{
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 175px;
     font-family: Vibes;
-    font-size: 40px;
+    font-size: 50px;
 }
 header.main p{
     position: absolute;
-    top: 95px;
+    top: 125px;
     left: 193px;
     font-family: Ovo;
-    font-size: 20px;
-
+    font-size: 22px;
 }
 header.main img{
     position: absolute;
     left: 45px;
     top: 20px;
     height: 150px;
+    -webkit-filter: drop-shadow(0 0 1px white);
+    filter:         drop-shadow(0 0 1px white);
 }
 
 nav{
