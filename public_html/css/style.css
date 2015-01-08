@@ -22,6 +22,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+/*Fuentes*/
 @font-face {
     font-family: Vibes;
     src: url(../font/GreatVibes-Regular.otf);
@@ -34,6 +36,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     font-family: OpenSans;
     src: url(../font/OpenSans-Regular.ttf);
 }
+
+/*Estilos generales*/
 *{margin:0;padding:0;}
 body{
     font-family: OpenSans;
@@ -41,9 +45,7 @@ body{
 }
 #wrapper{
     width: 1024px;
-    height: 100%;
     margin: 0 auto;
-    background: white;
     position: relative;
 }
 h1{font-family: Ovo;}
@@ -51,15 +53,12 @@ p{font-size: 14px;}
 a{
     text-decoration: none;
     font-weight: bold;
-    color: #84aa5b;
+    color: #6B9DA4;
 }
-a:hover{
-    text-decoration: none;
-    font-weight: normal;
-}
-a:visited{
-    color: #84AA5B;
-}
+a:hover{font-weight: normal;}
+a:visited{color: #84AA5B;}
+
+/*Estilos de cabecera*/
 header.main{
     position: relative;
     height: 200px;
@@ -68,28 +67,28 @@ header.main{
     color: #fafbf5;
     text-shadow: 0 0 3px black;
 }
+header.main h1, header.main p, header.main img{position: absolute;}
 header.main h1{
-    position: absolute;
     top: 70px;
     left: 175px;
     font-family: Vibes;
     font-size: 50px;
 }
 header.main p{
-    position: absolute;
     top: 125px;
     left: 193px;
     font-family: Ovo;
     font-size: 22px;
 }
 header.main img{
-    position: absolute;
     left: 45px;
     top: 20px;
     height: 150px;
     -webkit-filter: drop-shadow(0 0 1px white);
     filter: drop-shadow(0 0 1px white);
 }
+
+/*Estilos de barra de navegacion*/
 nav{
     background: #e9f1d7;
     height: 40px;
@@ -110,22 +109,15 @@ nav ul li a{
     height: 40px;
     line-height: 40px; /*Altura de cada linea == altura == alineado vertical*/
     width: 175px;
-    /*margin-left: -5px;*/ /*Revisar porque necesito este ajuste innecesario*/
-    /*Era por los espacios que deja el IDE entre lineas*/
 }
 nav ul li a:hover, nav ul li a.activo{
     font-weight: bold;
-    color:white !important; /*Previene del cambio de color por :visited*/
+    color:white !important; /*Previene del cambio de color por a:visited*/
     background-position: 0px 0px;
     background: #6b9da4;
 }
-aside{
-    height: 15px;
-    width: 175px;
-    background: #e9f1d7;
-    display: table-cell;
-    text-align: center;
-}
+
+/*Estilos del main*/
 main{
     background: #fafbf5;
     padding-bottom: 20px;
@@ -137,6 +129,7 @@ main>section{
 main>section #migas{
     padding: 0;
     font-size: 12px;
+    font-style: italic;
 }
 main>section article{
     margin: 0 auto;
@@ -153,11 +146,15 @@ main>section article img.right{
     margin: 10px;
     margin-right: 0;
 }
+
+/*Estilos del pie*/
 footer.main{
     height: 50px;
     background: #e9f1d7;
     text-align: center;
 }
+
+/*Estilos de publicidad*/
 #banner{
     background: rgba(0,0,0,.1);
     height: 100px;
