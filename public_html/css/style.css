@@ -56,13 +56,13 @@ a{
     color: #6B9DA4;
 }
 a:hover{font-weight: normal;}
-a:visited{color: #84AA5B;}
+a:visited{color: #6aa47f;}
 
 /*Estilos de cabecera*/
 header.main{
     position: relative;
     height: 200px;
-    background: #6B9DA4 url('../img/ft.jpg');
+    background: #6aa47f url('../img/ft.jpg');
     background-position: 0 -330px;
     color: #fafbf5;
     text-shadow: 0 0 3px black;
@@ -114,7 +114,7 @@ nav ul li a:hover, nav ul li a.activo{
     font-weight: bold;
     color:white !important; /*Previene del cambio de color por a:visited*/
     background-position: 0px 0px;
-    background: #6b9da4;
+    background: #6aa47f;
 }
 
 /*Estilos del main*/
