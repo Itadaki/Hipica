@@ -34,6 +34,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     text-align: center;
     max-height:0;
     transition: max-height 2s ease-in-out;
+    overflow:hidden;
+}
+.asterisco{
+    font-size:12px;
 }
 #contacto tr.open div {max-height: 100px;}
 #contacto .col_izq{text-align: right;}

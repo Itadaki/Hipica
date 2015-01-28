@@ -57,36 +57,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <form name="contacto" id="contacto" action="datos_enviados.html" oninput="activarTerminos()" onsubmit="return validar()">
                             <table border="0">
                                 <tbody>
+       
+
                                     <tr>
-                                        <td class="col_izq">Nombre</td>
+                                        <td class="col_izq">Nombre <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="nombre" id="nombre" class="form_input" value="" size="18" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Apellido 1</td>
+                                        <td class="col_izq">Apellido 1  <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="apellido1" id="apellido1" class="form_input" value="" size="18" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Apellido 2</td>
+                                        <td class="col_izq">Apellido 2  <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="apellido2" id="apellido2" class="form_input" value="" size="18" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Email</td>
+                                        <td class="col_izq">Email  <span class="asterisco">(*)</span></td>
                                         <td><input type="email" name="email" id="email" class="form_input" value="" size="18" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Teléfono fijo</td>
+                                        <td class="col_izq">Teléfono fijo  <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="fijo" id="fijo" class="form_input" value="" size="18" maxlength="9" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Teléfono móvil</td>
+                                        <td class="col_izq">Teléfono móvil <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="movil" id="movil" class="form_input" value="" size="18" maxlength="9" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Descripción</td>
+                                        <td class="col_izq">Descripción  <span class="asterisco">(*)</span></td>
                                         <td><textarea name="descripcion" id="descripcion" class="form_input" rows="4" cols="19" required></textarea></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Asunto</td>
+                                        <td class="col_izq">Asunto <span class="asterisco">(*)</span></td>
                                         <td>
                                             <select name="asunto" id="asunto" class="form_input" required>
                                                 <option></option>
@@ -103,12 +105,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                             <label for="terminos">Acepto los <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos y Condiciones</a></label>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td colspan="2" class="asterisco"> Los campos señalados son obligatorios (*)</td>
+                                    </tr>
                                     <tr id="error">
                                         <td colspan="2" ><div>Algúno de los campos es incorrecto</div></td>
                                     </tr>
                                     <tr style="text-align: center">
                                         <td colspan="2"><input type="submit" id="enviar" value="Enviar" disabled /></td>
                                     </tr>
+
                                 </tbody>
                             </table>
                         </form>
