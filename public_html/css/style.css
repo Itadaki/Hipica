@@ -57,7 +57,10 @@ a{
 }
 a:hover{font-weight: normal;}
 a:visited{color: #6aa47f;}
-
+.cabeza{
+    color:white !important;
+    font-weight: bold !important;
+}
 /*Estilos de cabecera*/
 header.main{
     position: relative;
