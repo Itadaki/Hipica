@@ -29,3 +29,6 @@
 function verTerminos() {
     window.open("popup_licencia.html", "Licencia", "width=600, height=450, top=100px, left=200px");
 }
+function cerrarAnuncio() {
+    document.getElementById('banner').style.height = 0;
+}
