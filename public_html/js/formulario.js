@@ -88,6 +88,7 @@ function validarEmail() {
  * @description Valida los campos de telefono
  * @returns {Boolean}
  */
+
 function validarTelefonos() {
     var expresion = /^(9|6)\d{8}$/;
     if (expresion.test(document.getElementById('fijo').value) && expresion.test(document.getElementById('movil').value)) {
