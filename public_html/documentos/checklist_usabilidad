@@ -26,7 +26,7 @@ DEL GRUPO DE FELIX
 
 SERVIDOR
 [x] Activar compresion gzip (ver abajo)
-[ ] Aumentar el tiempo de vida de algunos recursos
+[x] Aumentar el tiempo de vida de algunos recursos (ver abajo)
 [x] Hablitar “keep-Alive” para reducir solicitudes (ver abajo)
 [x] Especificar variable Accept-Encoding (ver abajo)     
 [ ] De CSS:
@@ -76,3 +76,20 @@ VARY: ACCEPT-ENCODING
         Header append Vary: Accept-Encoding
     </FilesMatch>
 </IfModule>
+
+EXPIRE CATCHING
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
