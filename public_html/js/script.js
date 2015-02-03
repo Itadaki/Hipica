@@ -32,3 +32,6 @@ function verTerminos() {
 function cerrarAnuncio() {
     document.getElementById('banner').style.height = 0;
 }
+function abrirMapa() {
+    window.open("donde_estamos.html");
+}

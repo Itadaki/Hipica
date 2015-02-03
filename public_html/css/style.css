@@ -286,6 +286,17 @@ div#cerrarAnuncio{
     background-size: 20px;
     cursor: pointer;
 }
+
+div#mapa{
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 10px;
+    background: url('../img/close_red.png');
+    background-size: 20px;
+    cursor: pointer;
+}
+
 #tierra{
     background-image: url('../img/banner/suelo.jpg');
     background-repeat: repeat;
