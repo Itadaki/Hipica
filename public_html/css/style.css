@@ -210,7 +210,7 @@ nav li {display: inline;}
 nav ul li a{
     color: black !important; /*Previene del cambio de color por :visited*/
     background-position: -200px 0px;
-    transition: background .5s, color .5s;
+    transition: background .25s, color .25s;
     text-decoration: none;
     display: inline-block;/*se convierte en bloque y le afecta width y height*/
     height: 40px;

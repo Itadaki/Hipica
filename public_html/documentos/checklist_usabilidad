@@ -25,9 +25,10 @@ DEL GRUPO DE FELIX
 [ ] la tipografía en dicha página es pequeña, por tanto, molesta y resulta difícil percibir una cálida bienvenida hacia el usuario por medio del sitio web
 
 SERVIDOR
+[x] Activar compresion gzip (ver abajo)
 [ ] Aumentar el tiempo de vida de algunos recursos
-[ ] Hablitar “keep-Alive” para reducir solicitudes
-[ ] Especificar variable Accept-Encoding
+[x] Hablitar “keep-Alive” para reducir solicitudes (ver abajo)
+[x] Especificar variable Accept-Encoding (ver abajo)     
 [ ] De CSS:
 [ ] Reduccion de recursos CSS un 35% para acelerar la descarga y el tiempo de ejecucion
 [ ] De contenido:
@@ -49,3 +50,29 @@ DE LAURA
 [ ] Enlaces de ayuda
 
 
+SOBRE .htaccess:
+
+GZIP
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+
+KEEP-ALIVE
+<ifModule mod_headers.c>
+    Header set Connection keep-alive
+</ifModule>
+
+VARY: ACCEPT-ENCODING
+<IfModule mod_headers.c>
+    <FilesMatch ".(js|css|xml|gz|html)$">
+        Header append Vary: Accept-Encoding
+    </FilesMatch>
+</IfModule>
