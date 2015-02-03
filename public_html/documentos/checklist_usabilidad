@@ -14,10 +14,27 @@ DEL GRUPO DE FELIX
 [x] Las cajas de texto tienen que tener el tamaño adecuado para  el dato que se introduzca
 [x] Implementar ayudas en los formularios
 [x] Incorporar botón de “reset”.
+[ ] Formulario básico y funcional aunque se echa en falta un enlace que lleve consigo la política de privacidad de protección de datos
 
 [ ] No hay un punto visual de partida en las páginas.
 [x] Enlazar el logotipo a la página principal
 [x] Uso excesivo del banner publicitario y además, no se puede parar
+[ ] Banner, al hacer clic en visitanos, se espera un mapa, unas indicaciones o algún tipo de motivación por parte de la empresa hacia el usuario para venderle esta información.
+[ ] Falta un plano para saber cómo llegar. Poca funcionalidad en relación a la simulación del sitio físico como tal, haciendo énfasis a un contenido más teórico y menos intuitivo 
+
+[ ] la tipografía en dicha página es pequeña, por tanto, molesta y resulta difícil percibir una cálida bienvenida hacia el usuario por medio del sitio web
+
+SERVIDOR
+[ ] Aumentar el tiempo de vida de algunos recursos
+[ ] Hablitar “keep-Alive” para reducir solicitudes
+[ ] Especificar variable Accept-Encoding
+[ ] De CSS:
+[ ] Reduccion de recursos CSS un 35% para acelerar la descarga y el tiempo de ejecucion
+[ ] De contenido:
+[ ] Reduccion de recursos HTML un 44% para acelerar la descarga.
+[ ] De imagen:
+[ ] Optimizar imágenes
+[ ] Especificar dimensiones en algunas imagenes
 
 
 DE LAURA
