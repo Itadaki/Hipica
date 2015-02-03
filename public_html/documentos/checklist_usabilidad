@@ -40,12 +40,12 @@ SERVIDOR
 DE LAURA
 [ ] Los terminos no siguen el estilo del sitio web
 [ ] El logo y nombre no resaltan sobre la imagen de cabecera
-[ ] Todas las paginas secundarias son homogeneas PERO el formulario discorda porque esta alineado al centro, mientras que las demas a la izquierda
+[x] Todas las paginas secundarias son homogeneas PERO el formulario discorda porque esta alineado al centro, mientras que las demas a la izquierda
 [ ] Nombre de la empresa mas grande
 [ ] Texto del menu (botones) pueden ser mas grandes
 [ ] Comentar un poco el CSS del lightbox, aunque sea decir para que sirve arriba
 [ ] Mapa web, sitio de ayuda, busqueda...
-[ ] Concretar el error del formulario
+[x] Concretar el error del formulario
 [ ] Enlaces de ayuda
 
 

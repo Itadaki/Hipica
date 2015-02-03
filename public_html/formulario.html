@@ -38,8 +38,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <div id="wrapper">
             <header class="main">
                 <a href="index.html" class="cabeza"> <h1>Ecuestria</h1>
-                <p>Escuela de hípica</p>
-                <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a> 
+                    <p>Escuela de hípica</p>
+                    <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a> 
             </header>
             <nav>
                 <ul>
@@ -58,34 +58,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <form name="contacto" id="contacto" action="datos_enviados.html" oninput="activarTerminos()" onsubmit="return validar()">
                             <table border="0">
                                 <tbody>
-       
-                                    
+
+
                                     <tr>
                                         <td class="col_izq">Nombre <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="nombre" id="nombre" class="form_input" value="" size="18" placeholder="Alfonso" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Apellido 1  <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq">Apellido 1 <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="apellido1" id="apellido1" class="form_input" value="" size="18" placeholder="Serrano" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Apellido 2  <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq">Apellido 2 <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="apellido2" id="apellido2" class="form_input" value="" size="18" placeholder="Gutiérrez" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Email  <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq">Email <span class="asterisco">(*)</span></td>
                                         <td><input type="email" name="email" id="email" class="form_input" value="" size="18" placeholder="ejemplo@ejem.ejm" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Teléfono fijo  <span class="asterisco">(*)</span></td>
-                                        <td><input type="text" name="fijo" id="fijo" class="form_input" value="" size="18" maxlength="9" placeholder="916542348" required/></td>
+                                        <td class="col_izq">Teléfono fijo</td>
+                                        <td><input type="text" name="fijo" id="fijo" class="form_input" value="" size="18" maxlength="9" placeholder="916542348" /></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq">Teléfono móvil <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="movil" id="movil" class="form_input" value="" size="18" maxlength="9" placeholder="666434876" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Descripción  <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq">Descripción <span class="asterisco">(*)</span></td>
                                         <td><textarea name="descripcion" id="descripcion" class="form_input" rows="4" cols="19" placeholder="Me gustaria recibir informacion sobre..." required></textarea></td>
                                     </tr>
                                     <tr>
@@ -103,12 +103,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     <tr>
                                         <td colspan="2">
                                             <input type="checkbox" name="terminos" id="terminos" value="" onchange="activarEnvio()" required disabled/>
-                                            
+
                                             <label for="terminos">Acepto los <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos y Condiciones</a></label>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="asterisco"> Los campos señalados son obligatorios (*)</td>
+                                        <td colspan="2" class="asterisco" style="text-align: center"> Los campos señalados son obligatorios (*)</td>
                                     </tr>
                                     <tr id="error">
                                         <td colspan="2" ><div>Algúno de los campos es incorrecto</div></td>
@@ -120,7 +120,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 </tbody>
                             </table>
                         </form>
-                    <!-- FIN Contenido -->
+                        <!-- FIN Contenido -->
                     </article>
                 </section>
             </main>
