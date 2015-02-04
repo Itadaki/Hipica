@@ -27,8 +27,9 @@
  * @description Abre un popup con el contenido de la licencia
  */
 function verTerminos() {
-    window.open("popup_licencia.html", "Licencia", "width=600, height=450, top=100px, left=200px");
-}
+    window.open("popup_licencia.html", "Licencia", "width=600, height=450, top=100px, left=200px");}
+function verPolitica() {
+    window.open("politicaprivacidad.html", "Licencia", "width=1200, height=800, top=100px, left=200px");}
 function cerrarAnuncio() {
     document.getElementById('banner').style.height = 0;
 }
@@ -38,5 +39,4 @@ function abrirMapa(){
 }
 
 function ayuda(parametro){
-    window.open("ayuda.html#"+parametro, "Ayuda", "width=750, height=700, top=100px, left=200px");
-}
+    window.open("ayuda.html#"+parametro, "Ayuda", "width=750, height=700, top=100px, left=200px");}
