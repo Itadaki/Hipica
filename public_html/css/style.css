@@ -55,7 +55,7 @@ a{
     font-weight: bold;
     color: #6B9DA4;
 }
-a:hover{font-weight: normal;}
+a:hover{font-weight: normal; text-decoration:underline;}
 a:visited{color: #6aa47f;}
 .cabeza{
     color:white !important;
@@ -223,6 +223,7 @@ nav ul li a:hover, nav ul li a.activo{
     color:white !important; /*Previene del cambio de color por a:visited*/
     background-position: 0px 0px;
     background: #6aa47f;
+    text-decoration:none;
 }
 
 /*Estilos del main*/
@@ -260,6 +261,7 @@ footer.main{
     height: 50px;
     background: #e9f1d7;
     text-align: center;
+    
 }
 
 /*Estilos de publicidad*/
