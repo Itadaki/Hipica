@@ -29,7 +29,7 @@
 function verTerminos() {
     window.open("popup_licencia.html", "Licencia", "width=600, height=450, top=100px, left=200px");}
 function verPolitica() {
-    window.open("politicaprivacidad.html", "Licencia", "width=1200, height=800, top=100px, left=200px");}
+    window.open("politicaprivacidad.html", "Licencia", "width=1227, height=850, top=100px, left=200px");}
 function cerrarAnuncio() {
     document.getElementById('banner').style.height = 0;
 }
