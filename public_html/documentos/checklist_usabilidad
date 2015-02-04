@@ -2,7 +2,7 @@ MARCA CON UNA x LOS PUNTOS ARREGLADOS
 [ ][x]
 
 DEL GRUPO DE FELIX
-[ ] Crear una caja de búsqueda
+[x] Crear una caja de búsqueda
 [x] Cambiar el fondo para aumentar la impresión positiva hacia la página de los usuarios
 [ ] Crear un eslogan
 [ ] Usar enlaces del tipo “pincha aquí” etc.????????
@@ -43,7 +43,7 @@ DE LAURA
 [ ] El logo y nombre no resaltan sobre la imagen de cabecera
 [x] Todas las paginas secundarias son homogeneas PERO el formulario discorda porque esta alineado al centro, mientras que las demas a la izquierda
 [ ] Nombre de la empresa mas grande
-[ ] Texto del menu (botones) pueden ser mas grandes
+[x] Texto del menu (botones) pueden ser mas grandes
 [ ] Comentar un poco el CSS del lightbox, aunque sea decir para que sirve arriba
 [ ] Mapa web, sitio de ayuda, busqueda...
 [x] Concretar el error del formulario
