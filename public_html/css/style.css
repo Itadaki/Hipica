@@ -53,7 +53,8 @@ p{font-size: 16px;}
 a{
     text-decoration: none;
     font-weight: bold;
-    color: #6B9DA4;
+    /*color: #6B9DA4;*/
+    color: #8ca46a;
 }
 a:hover{font-weight: normal; text-decoration:underline;}
 a:visited{color: #6aa47f;}
