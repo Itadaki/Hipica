@@ -7,7 +7,7 @@ DEL GRUPO DE FELIX
 [x] Crear un eslogan
 [ ] Usar enlaces del tipo “pincha aquí” etc.????????
 
-[ ] La navegabilidad de la web se podría mejorar creando un enlace al mapa del sitio e incorporando una distinción entre los links que llevan a otras páginas y los que invocan acciones.
+[x] La navegabilidad de la web se podría mejorar creando un enlace al mapa del sitio e incorporando una distinción entre los links que llevan a otras páginas y los que invocan acciones.
 
 [x] Crear valores predeterminados en los campos de entrada
 [x] Señalar cuales son los campos obligatorios
@@ -45,9 +45,9 @@ DE LAURA
 [x] Nombre de la empresa mas grande
 [x] Texto del menu (botones) pueden ser mas grandes
 [x] Comentar un poco el CSS del lightbox, aunque sea decir para que sirve arriba
-[ ] Mapa web, sitio de ayuda, busqueda...
+[x] Mapa web, sitio de ayuda, busqueda...
 [x] Concretar el error del formulario
-[ ] Enlaces de ayuda
+[x] Enlaces de ayuda
 
 
 SOBRE .htaccess:

@@ -1,5 +1,5 @@
 /*
-Autor = Diego Rodríguez Suárez-Bustillo
+Autor = Diego RodrÃ­guez SuÃ¡rez-Bustillo
 Fecha = 17-dic-2014
 Licencia = gpl30
 Version = 1.0
@@ -7,7 +7,7 @@ Descripcion = Estilos aplicados sobre el formulario de contacto
 */
 
 /*
-Copyright (C) 2014 Diego Rodríguez Suárez-Bustillo
+Copyright (C) 2014 Diego RodrÃ­guez SuÃ¡rez-Bustillo
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -26,6 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #contacto td{
     margin: 5px;
     padding: 2.5px;
+    text-align: right;
 }
 #contacto tr div {
     background: red;
