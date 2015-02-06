@@ -34,7 +34,8 @@ function cerrarAnuncio() {
     document.getElementById('banner').style.height = 0;
 }
 function abrirMapa(){
-    window.location.assign("donde_estamos.html")
+    window.location.assign("donde_estamos.html");
 }
 function ayuda(cadena){
-    window.open("ayuda.html#"+cadena, "Ayuda", "width=750, height=700, top=100px, left=200px");}
+    window.open("ayuda.html#"+cadena, "Ayuda", "width=750, height=800, top=100px, left=200px");
+}
