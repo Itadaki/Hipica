@@ -26,7 +26,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #contacto td{
     margin: 5px;
     padding: 2.5px;
-    text-align: right;
 }
 #contacto tr div {
     background: red;
@@ -41,4 +40,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     font-size:12px;
 }
 #contacto tr.open div {max-height: 100px;}
-#contacto .col_izq{text-align: right;}
