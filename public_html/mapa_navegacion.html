@@ -29,33 +29,60 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <title>Mapa de Navegacion</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="css/style.css" rel="stylesheet" />
         <style>
+
+
             body{
-            background: #fafbf5;}
+                  margin:15px;
+                background: #fafbf5;     
+                color: #6aa47f;}
+
             ul{
-                
+                 margin:15px;
+                padding:0px;
+                font-size:16px;
             }
+  
             li{
-                
+                    margin:15px;             
+                padding:0px;
+
+                font-size:14px;
             }
-            
+                      a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #6B9DA4;
+}
+            header{
+                background: #6aa47f;
+                color:white;
+                text-align: center;
+            }
+
         </style>
+        <script type="text/javascript" src="js/script.js"></script>
+
     </head>
     <body>
-        Home<ul>
+        <header><h1>Mapa de navegacion</h1></header>
+    <main>
+        <a href="index.html">Home</a><ul>
 
-            <li>Actividades</li>
-            <li> Galeria</li>
-            <li>Contacta
+            <li><a href="catalogo.html" title="Catálogo">Actividades</a></li> 
+            <li> <a href="galeria.html" title="Galería">Galería</a></li>
+            <li><a href="formulario.html" title="Contacta">Contacta</a>
                 <ul>
-                    <li>Terminos y Condiciones</li>
-                    <li>Politica y Privacidad de datos</li>
+                    <li><a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos y Condiciones </a></li>
+                    <li><a href="#" title="Terminos Licencia" onClick="verPolitica()">Politica y Privacidad de datos</a></li>
                 </ul></li>
-             
-            <li>Términos Licencia</li>
-            <li>Ayuda</li>
-            <li>Mapa</li>
-            <li>Mapa de Navegacion</li>
+
+            <li><a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a></li>
+            <li><a href="#" title="Terminos Licencia" onClick="ayuda()">Ayuda</a></li>
+            <li><a href="donde_estamos.html" title="Mapa">Mapa</a></li>
+            <li><a href="mapa_navegacion.html" title="Mapa de Navegacion">Mapa de Navegacion</a></li>
         </ul>
+        </main>
     </body>
 </html>

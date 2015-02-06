@@ -1,5 +1,5 @@
 /*
-Autor = Alejandro Montoya - Cristian Castaño - Diego Rodríguez
+Autor = Alejandro Montoya - Cristian CastaÃ±o - Diego RodrÃ­guez
 Fecha = 10-dic-2014
 Licencia = gpl30
 Version = 2.0
@@ -7,7 +7,7 @@ Descripcion = Estilos comunes a todas las paginas
 */
 
 /*
-Copyright (C) 2014 Diego Rodríguez Suárez-Bustillo
+Copyright (C) 2014 Diego RodrÃ­guez SuÃ¡rez-Bustillo
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 }
 
 /*Estilos generales*/
-*{margin:0;padding:0;}
+*{margin:0; padding:0;}
 body{
     font-family: OpenSans;
 }
