@@ -2,7 +2,7 @@
  * Autor = Diego Rodríguez Suárez-Bustillo
  * Fecha = 16-dic-2014
  * Licencia = gpl30
- * Version = 1.0
+ * Version = 2.0
  * Descripcion = Contiene metodos para el control del formulario de contacto
  */
 
