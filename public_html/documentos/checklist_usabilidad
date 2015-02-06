@@ -4,7 +4,7 @@ MARCA CON UNA x LOS PUNTOS ARREGLADOS
 DEL GRUPO DE FELIX
 [x] Crear una caja de búsqueda
 [x] Cambiar el fondo para aumentar la impresión positiva hacia la página de los usuarios
-[ ] Crear un eslogan
+[x] Crear un eslogan
 [ ] Usar enlaces del tipo “pincha aquí” etc.????????
 
 [ ] La navegabilidad de la web se podría mejorar creando un enlace al mapa del sitio e incorporando una distinción entre los links que llevan a otras páginas y los que invocan acciones.
@@ -14,15 +14,15 @@ DEL GRUPO DE FELIX
 [x] Las cajas de texto tienen que tener el tamaño adecuado para  el dato que se introduzca
 [x] Implementar ayudas en los formularios
 [x] Incorporar botón de “reset”.
-[ ] Formulario básico y funcional aunque se echa en falta un enlace que lleve consigo la política de privacidad de protección de datos
+[x] Formulario básico y funcional aunque se echa en falta un enlace que lleve consigo la política de privacidad de protección de datos
 
-[ ] No hay un punto visual de partida en las páginas.
+[x] No hay un punto visual de partida en las páginas.
 [x] Enlazar el logotipo a la página principal
 [x] Uso excesivo del banner publicitario y además, no se puede parar
-[ ] Banner, al hacer clic en visitanos, se espera un mapa, unas indicaciones o algún tipo de motivación por parte de la empresa hacia el usuario para venderle esta información.
-[ ] Falta un plano para saber cómo llegar. Poca funcionalidad en relación a la simulación del sitio físico como tal, haciendo énfasis a un contenido más teórico y menos intuitivo 
+[x] Banner, al hacer clic en visitanos, se espera un mapa, unas indicaciones o algún tipo de motivación por parte de la empresa hacia el usuario para venderle esta información.
+[x] Falta un plano para saber cómo llegar. Poca funcionalidad en relación a la simulación del sitio físico como tal, haciendo énfasis a un contenido más teórico y menos intuitivo 
 
-[ ] la tipografía en dicha página es pequeña, por tanto, molesta y resulta difícil percibir una cálida bienvenida hacia el usuario por medio del sitio web
+[x] la tipografía en dicha página es pequeña, por tanto, molesta y resulta difícil percibir una cálida bienvenida hacia el usuario por medio del sitio web
 
 SERVIDOR
 [x] Activar compresion gzip (ver abajo)
@@ -39,12 +39,12 @@ SERVIDOR
 
 
 DE LAURA
-[ ] Los terminos no siguen el estilo del sitio web
-[ ] El logo y nombre no resaltan sobre la imagen de cabecera
+[x] Los terminos no siguen el estilo del sitio web
+[x] El logo y nombre no resaltan sobre la imagen de cabecera
 [x] Todas las paginas secundarias son homogeneas PERO el formulario discorda porque esta alineado al centro, mientras que las demas a la izquierda
-[ ] Nombre de la empresa mas grande
+[x] Nombre de la empresa mas grande
 [x] Texto del menu (botones) pueden ser mas grandes
-[ ] Comentar un poco el CSS del lightbox, aunque sea decir para que sirve arriba
+[x] Comentar un poco el CSS del lightbox, aunque sea decir para que sirve arriba
 [ ] Mapa web, sitio de ayuda, busqueda...
 [x] Concretar el error del formulario
 [ ] Enlaces de ayuda
