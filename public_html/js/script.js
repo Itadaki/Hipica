@@ -50,7 +50,7 @@ function crearPolitica() {
     if (!checkCookie(COOKIE_NAME)) {
         var cookies = document.createElement('div');
         cookies.id = 'cookies';
-        cookies.innerHTML = "<div>Utilizamos cookies para ofrecer a nuestros visitantes una forma mas cómoda y eficiente a la hora de navegar por nuestra web. Para ello debes aceptar nuestra <a>Política de Cookies</a></div><span onclick='aceptarPolitica()'>Aceptar</span>";
+        cookies.innerHTML = "<div>Utilizamos cookies para ofrecer a nuestros visitantes una forma mas cómoda y eficiente a la hora de navegar por nuestra web. Para ello debes aceptar nuestra <a href='politica_cookies.html'>Política de Cookies</a></div><span onclick='aceptarPolitica()'>Aceptar</span>";
         var body = document.getElementsByTagName('body')[0];
         body.insertBefore(cookies,body.childNodes[0]);
     }
