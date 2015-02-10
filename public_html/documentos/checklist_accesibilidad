@@ -1,2 +1,22 @@
 CHECKLIST ACCESIBILIDAD
 [ ] [x]
+=========
+|COOKIES|
+=========
+TECNICAS (p.e. Pedido online) y DE ANALISIS (p.e. Google Analytics)
+[ ] Informar de manera visible, accesible y sin necesidad de hacer scroll de la politica de cookies
+[ ] Recabar el consentimiento previo informado del usuario ANTES de instalar cualquier cookie
+[ ] Explicar que es una cookie, tipo de cookies que usas y su finalidad
+[ ] Instrucciones sobre como deshabilitar las cookies en los diferentes navegadores
+[ ] Ofrecer un lugar donde se pueda obtener mas informacion
+
+
+METODO DE INFORMACION Y CONSENTIMIENTO
+[ ] Cuadro emergente con boton de aceptar
+FORMULARIO
+[ ] Una vez enviado el formulario guardar nombre, apellidos, mail. 
+    Cuando vuelva a visitar dar la bienvenida.
+
+
+ANALISIS ACCESIBILIDAD NIVEL AA
+...

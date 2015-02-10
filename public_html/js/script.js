@@ -41,3 +41,46 @@ function abrirMapa() {
 function ayuda(cadena) {
     window.open("ayuda.html#" + cadena, "Ayuda", "width=750, height=800, top=100px, left=200px");
 }
+
+//COOKIES
+var COOKIE_NAME = 'politica_cookies';
+var COOKIE_VALUE = 'aceptada';
+var COOKIE_DAYS = 365;
+function crearPolitica() {
+    if (!checkCookie(COOKIE_NAME)) {
+        var cookies = document.createElement('div');
+        cookies.id = 'cookies';
+        cookies.innerHTML = "<div>Utilizamos cookies para ofrecer a nuestros visitantes una forma mas cómoda y eficiente a la hora de navegar por nuestra web. Para ello debes aceptar nuestra <a>Política de Cookies</a></div><span onclick='aceptarPolitica()'>Aceptar</span>";
+        var body = document.getElementsByTagName('body')[0];
+        body.insertBefore(cookies,body.childNodes[0]);
+    }
+}
+function aceptarPolitica() {
+    setCookie(COOKIE_NAME, COOKIE_VALUE, COOKIE_DAYS);
+    document.getElementById('cookies').style.height = 0;
+}
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+function checkCookie(cname) {
+    if (getCookie(cname) !== "") {
+        return true;
+    }
+    return false;
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ')
+            c = c.substring(1);
+        if (c.indexOf(name) !== -1)
+            return c.substring(name.length, c.length);
+    }
+    return "";
+}
+window.onload = crearPolitica;
