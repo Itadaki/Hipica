@@ -40,3 +40,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     font-size:12px;
 }
 #contacto tr.open div {max-height: 100px;}
+article table{
+    border:0px;
+}

@@ -42,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a>
                 <div id="buscador">
                     <form action="http://www.google.com" >
-                        <input type="text" value="" placeholder="Buscar..."  />
+                        <input type="text" value="" placeholder="Buscar..." name="buscador" />
                         <input type="submit" value="buscar" />
                     </form></div>
             </header>
@@ -61,7 +61,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <h1>Contacta con nosotros</h1><br>
                         <p>Por favor, introduzca sus datos personales y el motivo de su consulta para que podamos atender su petición .</p><br>
                         <form name="contacto" id="contacto" action="datos_enviados.html" oninput="activarTerminos()" onsubmit="return validar()">
-                            <table border="0">
+                            <table>
                                 <tbody>
 
 
@@ -96,8 +96,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     <tr>
                                         <td class="col_izq">Asunto <span class="asterisco">(*)</span></td>
                                         <td>
-                                            <select name="asunto" id="asunto" required>
-                                                <option>---Selecciona----</option>
+                                            <select name="asunto" id="asunto" required  >
+                                                <option label="--Seleccionar--"></option>
                                                 <option>Acerca de actividades</option>
                                                 <option>Sobre los precios</option>
                                                 <option>Cómo llegar</option>
