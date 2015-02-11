@@ -58,6 +58,9 @@ function activarEnvio() {
 function validar() {
     mensaje = '';
     if (validarNombre() && validarEmail() && validarFijo() && validarMovil()) {
+        setCookie('nombre', document.getElementById('nombre').value, 365);
+        setCookie('apellidos', document.getElementById('apellido1').value +' ' +document.getElementById('apellido2').value, 365);
+        setCookie('email', document.getElementById('email').value, 365);
         return true;
     }
     var error = document.getElementById("error");

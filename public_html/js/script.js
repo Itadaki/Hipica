@@ -52,12 +52,29 @@ function crearPolitica() {
         cookies.id = 'cookies';
         cookies.innerHTML = "<div>Utilizamos cookies para ofrecer a nuestros visitantes una forma mas cómoda y eficiente a la hora de navegar por nuestra web. Para ello debes aceptar nuestra <a href='politica_cookies.html'>Política de Cookies</a></div><span onclick='aceptarPolitica()'>Aceptar</span>";
         var body = document.getElementsByTagName('body')[0];
-        body.insertBefore(cookies,body.childNodes[0]);
+        body.insertBefore(cookies, body.childNodes[0]);
     }
 }
 function aceptarPolitica() {
     setCookie(COOKIE_NAME, COOKIE_VALUE, COOKIE_DAYS);
     document.getElementById('cookies').style.height = 0;
+}
+function crearSaludo() {
+    if (checkCookie('nombre')) {
+        var saludo = document.createElement('div');
+        saludo.id = 'saludo';
+        saludo.innerHTML = "<div onclick='cerrarSaludo()'>Hola " + getCookie('nombre') + ', encantado de volver a verte!</div></div>';
+        var body = document.getElementsByTagName('body')[0];
+        body.appendChild(saludo);
+    }
+}
+function cerrarSaludo() {
+    setCookie('nombre', '', 0);
+    setCookie('apellidos', '', 0);
+    setCookie('email', '', 0);
+    var saludo = document.getElementById('saludo');
+    saludo.style.height = 0;
+    saludo.style.padding = 0;
 }
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -83,4 +100,7 @@ function getCookie(cname) {
     }
     return "";
 }
-window.onload = crearPolitica;
+window.onload = function () {
+    crearPolitica;
+    crearSaludo();
+};

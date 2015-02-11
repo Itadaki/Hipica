@@ -303,3 +303,31 @@ div#mapa{
     font-weight: bold;
 }
 #cookies a{color:white;text-decoration: underline;}
+#saludo{
+    transition: height 1s, padding 1s;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    background: #6aa47f;
+/*    position: fixed;
+    top: 0;*/
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+/*#saludo div{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}*/
+#saludo div::before{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    content: "x";
+    cursor: pointer;
+}
