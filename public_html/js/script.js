@@ -101,6 +101,6 @@ function getCookie(cname) {
     return "";
 }
 window.onload = function () {
-    crearPolitica;
+    crearPolitica();
     crearSaludo();
 };
