@@ -63,3 +63,67 @@ Comprensible
 
 Robusto
 [-] Las hojas de estilo tienen errores de gramática (lineas 49, 113, 174, 207, 209, 213, 231, 234, 239, 250, 252, 256, 264, 265, 270, 271, 273, 277, 292, 307)
+
+
+Analisis TAWDIS -- catálogo
+
+PERCEPTIBLE
+
+[]Controles de formulario sin etiquetar  [X]
+[]Posicionamiento de elementos mediante flotando  [X]
+[]Posicionamiento de elementos de forma absoluta  [!]
+[]Caracteristicas sensoriales [?]
+[]Informacion mediante color [?]
+[]Contraste [?]
+[]Contraste para fientes grandes [?]
+[]Utilizacion de tamaños absolutos  [!]
+[]Utilizacion de medidas absolutas en elementos de bloque  [!]
+[]Imágenes suceptibles de ser sustituidas por marcado [?]
+
+OPERABLE
+
+[]Utilización de eventos dependientes de dispositivo  [!]
+[]Movimiento automático del foco  [?]
+[]Movimiento del foco mediante teclado[?]
+[]Límite de tiempo de sesión[?]	
+[]Limite de tiempo controlado mediante un script  [?]
+[]Lectura de textos en movimiento  [?]
+[]Contenido en movimiento [?] 
+[]Destellos por debajo del umbral límite [?]
+[]Saltar bloques de contenido repetidos  [?]	
+[]Bloques de contenido  [?]
+[]Página con título descriptivo  [!]
+[]Orden lógico de navegación  [?]
+[]Posicionamiento de elementos mediante flotado  [!]
+[]Múltiples médios de localización [?]
+[]Contenido adecuado de encabezados y etiquetas [!]
+[]Cambio de foco con el evento 'onfocus'  [?]
+
+COMPRENSIBLE
+
+[] Declaración de idioma del documento [X]
+[] Idioma declarado e idioma real  [?]
+[] Cambios en el idioma  [?]	
+[] Cambio de contenidos con el evento 'onfocus'  [?]
+[] Cambios inesperados del foco en el evento 'onfocus'  [?]
+[] Apertura de ventana al cambiar el foco  	[?]
+[] Apertura de ventana con el evento 'onload'  [?]
+[] Cambio de contenidos con el evento 'onfocus' [?]
+[] Cambios causados por el evento 'onChange' en un selector  [?]	
+[] Navegación consistente  	[?]
+[] Denominación consistente  [?]
+[] Identifique los valores erróneos en formularios   [!]
+[] Identifique los valores que deben indicarse con formatos  [!]
+[] Etiquetado de los controles de formulario  [X]
+[] Proporcione sugerencias para valores erróneos en formularios  [!]
+[] Prevención de errores para formularios legales, financieros o de datos [!]
+[] Prevención de errores en acciones de borrado para formularios legales, financieros o de datos [!]
+[] Prevención de errores en exámenes   [!]
+
+ROBUSTO
+
+[] Validación de las hojas de estilo  [!]
+[] Validación de las hojas de Formularios[!]
+[] Controles de formulario sin etiquetar  [X]
+[] Nombre, rol y valor  Ayuda [?]
+
