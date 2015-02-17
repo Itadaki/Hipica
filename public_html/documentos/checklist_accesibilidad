@@ -20,3 +20,46 @@ FORMULARIO
 
 ANALISIS ACCESIBILIDAD NIVEL AA
 ...
+
+INDEX
+W3 VALIDATOR
+[-] Line 55, Column 29: Article lacks heading. Consider using h2-h6 elements to add identifying headings to all articles.
+[x] Line 60, Column 28: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).
+[-] Line 54, Column 25: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+CSS
+W3 JIGSAW
+[-] can't find the warning message for vendor-extension
+[ ] 
+
+TAWDIS
+Perceptible
+[-] Imágenes que pueden requerir descripción larga (longdesc)
+[?] Defina la presentación de los elementos mediante hojas de estilo (no tags b i u)
+[X] Compruebe que no se proporciona información basándose exclusivamente en características sensoriales (forma, tamaño, posición, sonido,...)
+[X] Compruebe que no se proporciona información basándose exclusivamente en su color
+[-] Para textos menores de 18 puntos y no negrita o menor de 14 puntos y negrita existe un contraste de al menos 4.5:1
+[x] Para textos de al menos 18 puntos y no negrita o de al menos 14 puntos y negrita existe un contraste de al menos 3:1 (es 20.18:1)
+[-] Compruebe que se los elementos con anchos absolutos no ocultan información al redimensionarse la página o el tamaño de fuente.
+[ ] No utilice unidades absolutas para los tamaños de fuente.
+[ ] Cuando exista un marcador apropiado, use marcadores en vez de imágenes para transmitir la información.
+[ ] 
+[ ] 
+
+Operable
+[ ] Para los scripts y applets, asegúrese de que los manejadores de evento sean entradas independientes del dispositivo.
+[ ] No provoque movimientos inesperados del foco
+[ ] Compruebe que se puede mover el foco de cualquier elemento mediante teclado
+[ ] Compruebe que el título de la página es descriptivo
+[-] Compruebe que el flotado de elementos no afecta a la secuencia lógica de lectura del documento
+[ ] Los eventos 'onfocus' sobre un elemento no debe cambiar el foco a otro elemento
+[ ] 
+
+Comprensible
+[x] No se ha declarado el idioma principal del documento. (lang="es")
+[ ] Compruebe que se identifican los cambios en el idioma (usando lang)
+[ ] Para formularios de entrada de datos compruebe que se identifican valores erroneos
+[ ] 
+
+Robusto
+[-] Las hojas de estilo tienen errores de gramática (lineas 49, 113, 174, 207, 209, 213, 231, 234, 239, 250, 252, 256, 264, 265, 270, 271, 273, 277, 292, 307)
