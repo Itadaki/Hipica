@@ -64,38 +64,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <form name="contacto" id="contacto" action="datos_enviados.html" oninput="activarTerminos()" onsubmit="return validar()">
                             <table>
                                 <tbody>
-
-
                                     <tr>
-                                        <td class="col_izq">Nombre <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq"><label for="nombre">Nombre <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="nombre" id="nombre" value="" size="18" placeholder="Alfonso" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Apellido 1 <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq"><label for="apellido1">Apellido 1</label> <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="apellido1" id="apellido1" value="" size="18" placeholder="Serrano" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Apellido 2 <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq"><label for="apellido2">Apellido 2</label> <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="apellido2" id="apellido2" value="" size="18" placeholder="Gutiérrez" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Email <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq"><label for="email">Email</label> <span class="asterisco">(*)</span></td>
                                         <td><input type="email" name="email" id="email" value="" size="18" placeholder="ejemplo@ejem.ejm" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Teléfono fijo</td>
+                                        <td class="col_izq"><label for="fijo">Teléfono fijo</label></td>
                                         <td><input type="text" name="fijo" id="fijo" value="" size="18" maxlength="9" placeholder="916542348" /></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Teléfono móvil <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq"><label for="movil">Teléfono móvil</label> <span class="asterisco">(*)</span></td>
                                         <td><input type="text" name="movil" id="movil" value="" size="18" maxlength="9" placeholder="666434876" required/></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Descripción <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq"><label for="descripcion">Descripción</label> <span class="asterisco">(*)</span></td>
                                         <td><textarea name="descripcion" id="descripcion" rows="4" cols="19" placeholder="Me gustaria recibir informacion sobre..." required></textarea></td>
                                     </tr>
                                     <tr>
-                                        <td class="col_izq">Asunto <span class="asterisco">(*)</span></td>
+                                        <td class="col_izq"><label for="asunto">Asunto</label> <span class="asterisco">(*)</span></td>
                                         <td>
                                             <select name="asunto" id="asunto" required  >
                                                 <option label="--Seleccionar--"></option>
