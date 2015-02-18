@@ -49,7 +49,8 @@ body{
     box-shadow: rgba(0,0,0,0.3) 0px 0px 20px 0px ;
 }
 h1, h2{font-family: Ovo;}
-p{font-size: 16px;}
+/*p{font-size: 16px;}*/
+p{font-size: 1em;}
 a{
     text-decoration: none;
     font-weight: bold;
@@ -57,16 +58,20 @@ a{
     color: #8ca46a;
 }
 a:hover{font-weight: normal; text-decoration:underline;}
-a:visited{color: #6aa47f;}
+/*a:visited{color: #6aa47f;}*/
+a:visited{color: #528063;}
 .cabeza{
     color:white !important;
     font-weight: bold !important;
 }
+.negrita{font-weight: bold;}
+.cursiva{font-style: oblique;}
+.subrayado{text-decoration: underline;}
 /*Estilos de cabecera*/
 header.main{
     position: relative;
     height: 200px;
-    background: #6aa47f url('../img/header3.jpg');
+    background: #e9f1d7 url('../img/header3.jpg');
     color: #fafbf5;
     text-shadow: 0 0 10px black;
 }
@@ -75,13 +80,15 @@ header.main h1{
     top: 70px;
     left: 175px;
     font-family: Vibes;
-    font-size: 75px;
+    /*font-size: 75px;*/
+    font-size: 4.6875em;
 }
 header.main p{
     top: 145px;
     left: 230px;
     font-family: Ovo;
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size: 1.375em;
 }
 header.main img{
     left: 45px;
@@ -109,21 +116,29 @@ nav ul{
 nav li {display: inline;}
 nav ul li a{
     color: black !important; /*Previene del cambio de color por :visited*/
-    background-position: -200px 0px;
-    transition: background .25s, color .25s;
+    transition: border .25s;
     text-decoration: none;
     display: inline-block;/*se convierte en bloque y le afecta width y height*/
-    height: 40px;
+    height: 35px;
     line-height: 40px; /*Altura de cada linea == altura == alineado vertical*/
     width: 175px;
-    font-size:20px;
+    /*font-size:20px;*/
+    font-size:1.25em;
+    border-bottom: 5px solid #e9f1d7;
 }
+/* VIEJO ESTILO
 nav ul li a:hover, nav ul li a.activo{
     font-weight: bold;
-    color:white !important; /*Previene del cambio de color por a:visited*/
+    color:white !important; Previene del cambio de color por a:visited
     background-position: 0px 0px;
     background: #6aa47f;
+    background: #528063;
     text-decoration:none;
+}*/
+nav ul li a:hover, nav ul li a.activo{
+    font-weight: bold;
+    text-decoration:none;
+    border-bottom: 5px solid #6aa47f;
 }
 
 /*Estilos del main*/
@@ -137,7 +152,8 @@ main>section{
 }
 main>section #migas{
     padding: 0;
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font-size: 0.75em;
     font-style: italic;
 }
 main>section article{
@@ -224,7 +240,8 @@ div#mapa{
     height: 100px;
     line-height: 100px;
     font-family: Vibes;
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: 2.5em;
     color:white;
     text-align: center;
     -webkit-animation: aparecer 7s infinite alternate;
@@ -283,11 +300,13 @@ div#mapa{
     height: 60px;
     min-width: 1024px;
     width: 100%;
-    background: #6aa47f;
+    /*background: #6aa47f;*/
+    background: #528063;
 /*    position: fixed;
     top: 0;*/
     color: white;
-    font-size: 13px;
+    /*font-size: 13px;*/
+    font-size: 0.8125em;
     text-align: center;
     transition: height 1s;
     overflow: hidden;
@@ -308,10 +327,12 @@ div#mapa{
     height: 40px;
     width: 150px;
     padding: 10px;
-    background: #6aa47f;
+    /*background: #6aa47f;*/
+    background: #528063;
 /*    position: fixed;
     top: 0;*/
     color: white;
+    /*font-size: 13px;*/
     font-size: 13px;
     text-align: center;
     position: fixed;

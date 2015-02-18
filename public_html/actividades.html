@@ -4,7 +4,7 @@ Autor=Alejandro Montoya Blanco
 Fecha = 16-dic-2014
 Licencia = gpl30
 Version = 2.0
-Descripcion= Catalogo de productos
+Descripcion= Catalogo de productos y actividades
 -->
 
 <!--
@@ -24,15 +24,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<html>
+<html lang="es">
     <head>
-        <title>Ecuestria - Tu escuela de hípica</title>
+        <title>Ecuestria - Tu escuela de hípica - Lista de Actividades</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/catalogo.css" />
+        <link rel="stylesheet" href="css/actividades.css" />
         <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/catalogo.js"></script>
+        <script type="text/javascript" src="js/actividades.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -42,24 +42,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                 <p>Tu escuela de hípica</p>
                 <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a>
                 <div id="buscador">
-                    <form action="http://www.google.com" >
-                        <input type="text" value="" placeholder="Buscar..." name="buscador" title="Buscador"  />
+                    <form method="GET" action="http://www.google.com/search" >
+                        <input type="text" value="" placeholder="Buscar..." name="q" title="Buscador"/>
+                        <input type="hidden" name="sitesearch" value="http://rodribus.esy.es/hipica/v3/" />
                         <input type="submit" value="buscar" />
                     </form></div>
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.html" title="Home">Home</a></li><li><a href="catalogo.html" title="Catálogo" class="activo">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
+                    <li><a href="index.html" title="Home">Home</a></li><li><a href="actividades.html" title="Actividades" class="activo">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
                 </ul>
             </nav>
             <main>
                 <section>
                     <article >
-                        <div id="migas"><a href="index.html" title="home">home</a> > <a href="catalogo.html" title="Catálogo">catálogo</a></div>
+                        <div id="migas"><a href="index.html" title="home">home</a> > <a href="actividades.html" title="Actividades">actividades</a></div>
                     </article>
                     <article>
                         <!-- Contenido -->
-                        <h1>Catálogo de servicios</h1>
+                        <h2>Catálogo de servicios y actividades</h2>
                         <div class="titulo top"></div>
                         
                         <div class="titulo" onClick="show(1)"><span>Iniciación a la doma clásica y el salto</span></div>
