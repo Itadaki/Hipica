@@ -24,9 +24,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<html>
+<html lang="es">
     <head>
-        <title>Ecuestria - Tu escuela de hípica</title>
+        <title>Ecuestria - Tu escuela de hípica - Dónde estamos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
@@ -40,35 +40,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     <p>Tu escuela de hípica</p>
                     <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a>
                 <div id="buscador">
-                    <form action="http://www.google.com" >
-                        <input type="text" value="" placeholder="Buscar..." name="buscador" title="Buscador" />
+                    <form method="GET" action="http://www.google.com/search" >
+                        <input type="text" value="" placeholder="Buscar..." name="q" title="Buscador"/>
+                        <input type="hidden" name="sitesearch" value="http://rodribus.esy.es/hipica/v3/" />
                         <input type="submit" value="buscar" />
                     </form></div>
 
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.html" title="Home" >Home</a></li><li><a href="catalogo.html" title="Catálogo">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
+                    <li><a href="index.html" title="Home" >Home</a></li><li><a href="actividades.html" title="Actividades">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
                 </ul>
             </nav>
             <main>
                 <section>
                     <article>
-                       <div id="migas">  <a href="index.html" title="home">home</a> > <a href="galeria.html" title="Galería">mapa</a></div>
+                        <div id="migas">  <a href="index.html" title="home">home</a> > <a href="galeria.html" title="Galería">mapa</a></div>
                     </article>
                     <article>
                         <!-- Contenido -->
-                        <h1>¡Aquí estámos!</h1>
+                        <h2>¡Aquí estámos!</h2>
                         <p>
                             <img src="img/mapa.png" alt="Foto" class="left" />
                             Estamos situados en un entorno natural a tan sólo 15 minutos de <i>Madrid</i> ciudad y 5 minutos de Alcobendas, San Sebastian de los Reyes, La Moraleja, Fuente del Fresno, Ciudalcampo y Santo Domingo.<br>
-                        Si usted viene desde la parte Noreste de Madrid la mejor ruta es por la A-1, hasta la salida 28, si en cambio viene de la parte Noroeste de Madrid por la M-607 hasta la salida 13 y si usted viene del 
-                        centro puede escoger entre la M-30 y M-40 hasta llegar al ramal de la A-1 o M-607.<br>
-                        ¡Buen viaje!
-                        <!-- FIN Contenido -->
+                            Si usted viene desde la parte Noreste de Madrid la mejor ruta es por la A-1, hasta la salida 28, si en cambio viene de la parte Noroeste de Madrid por la M-607 hasta la salida 13 y si usted viene del 
+                            centro puede escoger entre la M-30 y M-40 hasta llegar al ramal de la A-1 o M-607.<br>
+                            ¡Buen viaje!
+                            <!-- FIN Contenido -->
                     </article>
                 </section>
-                
+
             </main>
             <footer class="main">
                 <a href="formulario.html" title="Contacto">Contacto</a> - <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a> - <a href="#" title="Ayuda" onClick="ayuda('actividades')">Ayuda</a> - <a href="donde_estamos.html" title="Mapa">Donde Estamos</a> - <a href="mapa_navegacion.html" title="Mapa de Navegacion">Mapa Web</a><br>

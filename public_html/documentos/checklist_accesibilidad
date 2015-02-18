@@ -24,7 +24,7 @@ FORMULARIO
 
 ANALISIS ACCESIBILIDAD NIVEL AA
 
-[ ] Cambiar contraste de color en MENU ACTIVE (blanco sobre verde oscuro) = 2.9:1 = FAIL AA
+[x] Cambiar contraste de color en MENU ACTIVE (blanco sobre verde oscuro) = 2.9:1 = FAIL AA
 [x] No cambiar contraste de color en MENU (negro sobre verde claro) = 18.03:1 = PASS AA
 
 INDEX
@@ -46,14 +46,14 @@ Perceptible
 [-] Para textos menores de 18 puntos y no negrita o menor de 14 puntos y negrita existe un contraste de al menos 4.5:1
 [x] Para textos de al menos 18 puntos y no negrita o de al menos 14 puntos y negrita existe un contraste de al menos 3:1 (es 20.18:1)
 [-] Compruebe que se los elementos con anchos absolutos no ocultan información al redimensionarse la página o el tamaño de fuente.
-[ ] No utilice unidades absolutas para los tamaños de fuente.
+[x] No utilice unidades absolutas para los tamaños de fuente.
 [x] Cuando exista un marcador apropiado, use marcadores en vez de imágenes para transmitir la información.
 
 Operable
 [-] Para los scripts y applets, asegúrese de que los manejadores de evento sean entradas independientes del dispositivo.
 [-] No provoque movimientos inesperados del foco
-[ ] Compruebe que se puede mover el foco de cualquier elemento mediante teclado
-[ ] Compruebe que el título de la página es descriptivo
+[x] Compruebe que se puede mover el foco de cualquier elemento mediante teclado
+[x] Compruebe que el título de la página es descriptivo
 [-] Compruebe que el flotado de elementos no afecta a la secuencia lógica de lectura del documento
 [-] Los eventos 'onfocus' sobre un elemento no debe cambiar el foco a otro elemento
 

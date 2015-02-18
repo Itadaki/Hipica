@@ -24,9 +24,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<html>
+<html lang="es">
     <head>
-        <title>Ecuestria - Tu escuela de hípica</title>
+        <title>Ecuestria - Tu escuela de hípica - Datos del formulario recibidos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
@@ -36,18 +36,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <div id="wrapper">
             <header class="main">
                 <a href="index.html" class="cabeza"> 
-                <h1>Ecuestria</h1>
-                <p>Tu escuela de hípica</p>
-                <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a> 
+                    <h1>Ecuestria</h1>
+                    <p>Tu escuela de hípica</p>
+                    <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a> 
                 <div id="buscador">
-                    <form action="http://www.google.com" >
-                        <input type="text" value="" placeholder="Buscar..." name="buscador" title="Buscador" />
+                    <form method="GET" action="http://www.google.com/search" >
+                        <input type="text" value="" placeholder="Buscar..." name="q" title="Buscador"/>
+                        <input type="hidden" name="sitesearch" value="http://rodribus.esy.es/hipica/v3/" />
                         <input type="submit" value="buscar" />
                     </form></div>
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.html" title="Home" class="activo">Home</a></li><li><a href="catalogo.html" title="Catálogo">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
+                    <li><a href="index.html" title="Home" class="activo">Home</a></li><li><a href="actividades.html" title="Actividades">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta">Contacta</a></li>
                 </ul>
             </nav>
             <main>
@@ -57,10 +58,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     </article>
                     <article>
                         <!-- Contenido -->
-                        <h1>Datos recibidos</h1>
-                        <p>
-                            ¡Tus datos han sido recibidos correctamente y te contactaremos lo antes posible para resolver tu pregunta!
-                        </p>
+                        <h2>Datos recibidos</h2>
+                        <p>¡Tus datos han sido recibidos correctamente y te contactaremos lo antes posible para resolver tu pregunta!</p>
                         <!-- FIN Contenido -->
                     </article>
                 </section>

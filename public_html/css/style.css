@@ -49,7 +49,8 @@ body{
     box-shadow: rgba(0,0,0,0.3) 0px 0px 20px 0px ;
 }
 h1, h2{font-family: Ovo;}
-p{font-size: 16px;}
+/*p{font-size: 16px;}*/
+p{font-size: 1em;}
 a{
     text-decoration: none;
     font-weight: bold;
@@ -79,13 +80,15 @@ header.main h1{
     top: 70px;
     left: 175px;
     font-family: Vibes;
-    font-size: 75px;
+    /*font-size: 75px;*/
+    font-size: 4.6875em;
 }
 header.main p{
     top: 145px;
     left: 230px;
     font-family: Ovo;
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size: 1.375em;
 }
 header.main img{
     left: 45px;
@@ -119,7 +122,8 @@ nav ul li a{
     height: 35px;
     line-height: 40px; /*Altura de cada linea == altura == alineado vertical*/
     width: 175px;
-    font-size:20px;
+    /*font-size:20px;*/
+    font-size:1.25em;
     border-bottom: 5px solid #e9f1d7;
 }
 /* VIEJO ESTILO
@@ -148,7 +152,8 @@ main>section{
 }
 main>section #migas{
     padding: 0;
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font-size: 0.75em;
     font-style: italic;
 }
 main>section article{
@@ -235,7 +240,8 @@ div#mapa{
     height: 100px;
     line-height: 100px;
     font-family: Vibes;
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: 2.5em;
     color:white;
     text-align: center;
     -webkit-animation: aparecer 7s infinite alternate;
@@ -299,7 +305,8 @@ div#mapa{
 /*    position: fixed;
     top: 0;*/
     color: white;
-    font-size: 13px;
+    /*font-size: 13px;*/
+    font-size: 0.8125em;
     text-align: center;
     transition: height 1s;
     overflow: hidden;
@@ -325,6 +332,7 @@ div#mapa{
 /*    position: fixed;
     top: 0;*/
     color: white;
+    /*font-size: 13px;*/
     font-size: 13px;
     text-align: center;
     position: fixed;

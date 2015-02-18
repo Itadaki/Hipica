@@ -24,16 +24,16 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<html>
+<html lang="es">
     <head>
-        <title>Ecuestria - Tu escuela de hípica</title>
+        <title>Ecuestria - Tu escuela de hípica - Mapa de navegacion web</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/formulario.css" />
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/formulario.js"></script>
-            <style>
+        <style>
 
 
             body{margin:15px;
@@ -63,14 +63,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                     <p>Tu escuela de hípica</p>
                     <img src="img/logo.png" alt="Logo" title="Ecuestria" /></a>
                 <div id="buscador">
-                    <form action="http://www.google.com" >
-                        <input type="text" value="" placeholder="Buscar..." name="buscador" title="Buscador"  />
+                    <div id="buscador">
+                    <form method="GET" action="http://www.google.com/search" >
+                        <input type="text" value="" placeholder="Buscar..." name="q" title="Buscador"/>
+                        <input type="hidden" name="sitesearch" value="http://rodribus.esy.es/hipica/v3/" />
                         <input type="submit" value="buscar" />
                     </form></div>
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.html" title="Home">Home</a></li><li><a href="catalogo.html" title="Catálogo">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta" >Contacta</a></li>
+                    <li><a href="index.html" title="Home">Home</a></li><li><a href="actividades.html" title="Actividades">Actividades</a></li><li><a href="galeria.html" title="Galería">Galería</a></li><li><a href="formulario.html" title="Contacta" >Contacta</a></li>
                 </ul>
             </nav>
             <main>
@@ -79,21 +81,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <div id="migas">   <a href="index.html" title="home">home</a> > <a href="mapa_navegacion.html" title="Contacta">mapa web</a></div>
                     </article>
                     <article>
-  <a href="index.html">Home</a><ul>
+                        <h2>Mapa de navegación</h2>
+                        <a href="index.html">Home</a><ul>
+                            <li><a href="actividades.html" title="Actividades">Actividades</a></li> 
+                            <li><a href="galeria.html" title="Galería">Galería</a></li>
+                            <li>
+                                <a href="formulario.html" title="Contacta">Contacta</a>
+                                <ul>
+                                    <li><a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos y Condiciones </a></li>
+                                    <li><a href="#" title="Terminos Licencia" onClick="verPolitica()">Politica y Privacidad de datos</a></li>
+                                </ul>
+                            </li>
 
-            <li><a href="catalogo.html" title="Catálogo">Actividades</a></li> 
-            <li> <a href="galeria.html" title="Galería">Galería</a></li>
-            <li><a href="formulario.html" title="Contacta">Contacta</a>
-                <ul>
-                    <li><a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos y Condiciones </a></li>
-                    <li><a href="#" title="Terminos Licencia" onClick="verPolitica()">Politica y Privacidad de datos</a></li>
-                </ul></li>
-
-            <li><a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a></li>
-            <li><a href="#" title="Terminos Licencia" onClick="ayuda()">Ayuda</a></li>
-            <li><a href="donde_estamos.html" title="Mapa">Mapa</a></li>
-            <li><a href="mapa_navegacion.html" title="Mapa de Navegacion">Mapa de Navegacion</a></li>
-        </ul>
+                            <li><a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos Licencia</a></li>
+                            <li><a href="#" title="Terminos Licencia" onClick="ayuda()">Ayuda</a></li>
+                            <li><a href="donde_estamos.html" title="Mapa">Mapa</a></li>
+                            <li><a href="mapa_navegacion.html" title="Mapa de Navegacion">Mapa de Navegacion</a></li>
+                        </ul>
                     </article>
                 </section>
             </main>

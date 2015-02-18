@@ -37,7 +37,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     overflow:hidden;
 }
 .asterisco{
-    font-size:12px;
+    /*font-size:12px;*/
+    font-size:0.75em;
 }
 #contacto tr.open div {max-height: 100px;}
 article table{
