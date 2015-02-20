@@ -174,7 +174,7 @@ main>section article img.right{
 
 /*Estilos del pie*/
 footer.main{
-    height: 50px;
+    /*height: 50px;*/
     background: #e9f1d7;
     text-align: center;
 
