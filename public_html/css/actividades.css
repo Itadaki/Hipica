@@ -33,9 +33,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 .catalogo.abierto{max-height: 310px;}
 .catalogo p{padding: 20px;}
 .titulo{
-    background: #6aa47f;
+    background: #528063;
     text-align: center;
-    color:white; 
+    color: white; 
     font-weight: bold; 
     cursor: pointer; 
     padding: 3px 0;}
