@@ -1,5 +1,5 @@
 /*
-Autor = Alejandro Montoya - Cristian CastaÃƒÂ±o - Diego RodrÃƒÂ­guez
+Autor = Alejandro Montoya - Cristian Castaño - Diego Rodríguez
 Fecha = 10-dic-2014
 Licencia = gpl30
 Version = 2.0
@@ -7,7 +7,7 @@ Descripcion = Estilos comunes a todas las paginas
 */
 
 /*
-Copyright (C) 2014 Diego RodrÃƒÂ­guez SuÃƒÂ¡rez-Bustillo
+Copyright (C) 2014 Diego Rodríguez Suárez-Bustillo
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -150,10 +150,13 @@ main{
 main>section{
     padding: 30px;
     min-height: 400px;
+    margin: 0 auto;
+    width: 600px;
+    padding: 15px;
 }
-main>section #migas{
-    padding: 0;
-    /*font-size: 12px;*/
+main #migas{
+    margin: 30px auto;
+    width: 600px;
     font-size: 0.75em;
     font-style: italic;
 }
@@ -162,12 +165,12 @@ main>section article{
     width: 600px;
     padding: 15px;
 }
-main>section article img.left{
+main>section  img.left{
     float:left; 
     margin: 10px;
     margin-left: 0;
 }
-main>section article img.right{
+main>section  img.right{
     float:right; 
     margin: 10px;
     margin-right: 0;
