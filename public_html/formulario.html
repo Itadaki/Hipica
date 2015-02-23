@@ -63,36 +63,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                 <tbody>
                                     <tr>
                                         <td class="col_izq"><label for="nombre">Nombre <span class="asterisco">(*)</span></td>
-                                        <td><input type="text" name="nombre" id="nombre" value="" size="18" placeholder="Alfonso" required/></td>
+                                        <td><input type="text" name="nombre" id="nombre" title="Introduce tu nombre" value="" size="18" placeholder="Alfonso" required/></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq"><label for="apellido1">Apellido 1</label> <span class="asterisco">(*)</span></td>
-                                        <td><input type="text" name="apellido1" id="apellido1" value="" size="18" placeholder="Serrano" required/></td>
+                                        <td><input type="text" name="apellido1" id="apellido1" title="Introduce tu primer apellido" value="" size="18" placeholder="Serrano" required/></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq"><label for="apellido2">Apellido 2</label> <span class="asterisco">(*)</span></td>
-                                        <td><input type="text" name="apellido2" id="apellido2" value="" size="18" placeholder="Gutiérrez" required/></td>
+                                        <td><input type="text" name="apellido2" id="apellido2" title="Introduce tu segundo apellido" value="" size="18" placeholder="Gutiérrez" required/></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq"><label for="email">Email</label> <span class="asterisco">(*)</span></td>
-                                        <td><input type="email" name="email" id="email" value="" size="18" placeholder="ejemplo@ejem.ejm" required/></td>
+                                        <td><input type="email" name="email" id="email" title="Introduce tu email" value="" size="18" placeholder="ejemplo@ejem.ejm" required/></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq"><label for="fijo">Teléfono fijo</label></td>
-                                        <td><input type="text" name="fijo" id="fijo" value="" size="18" maxlength="9" placeholder="916542348" /></td>
+                                        <td><input type="text" name="fijo" id="fijo" title="Introduce tu teléfono fijo" value="" size="18" maxlength="9" placeholder="916542348" /></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq"><label for="movil">Teléfono móvil</label> <span class="asterisco">(*)</span></td>
-                                        <td><input type="text" name="movil" id="movil" value="" size="18" maxlength="9" placeholder="666434876" required/></td>
+                                        <td><input type="text" name="movil" id="movil" title="Introduce tu teléfono móvil" value="" size="18" maxlength="9" placeholder="666434876" required/></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq"><label for="descripcion">Descripción</label> <span class="asterisco">(*)</span></td>
-                                        <td><textarea name="descripcion" id="descripcion" rows="4" cols="19" placeholder="Me gustaria recibir informacion sobre..." required></textarea></td>
+                                        <td><textarea name="descripcion" id="descripcion" title="Una breve descripcion de tu consulta" rows="4" cols="19" placeholder="Me gustaria recibir informacion sobre..." required></textarea></td>
                                     </tr>
                                     <tr>
                                         <td class="col_izq"><label for="asunto">Asunto</label> <span class="asterisco">(*)</span></td>
                                         <td>
-                                            <select name="asunto" id="asunto" required  >
+                                            <select name="asunto" id="asunto" title="Elige la temática de la consulta" required  >
                                                 <option label="--Seleccionar--"></option>
                                                 <option>Acerca de actividades</option>
                                                 <option>Sobre los precios</option>
@@ -103,7 +103,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <input type="checkbox" name="terminos" id="terminos" value="" onchange="activarEnvio()" required disabled/>
+                                            <input type="checkbox" name="terminos" id="terminos" title="Acepto las condiciones" value="" onchange="activarEnvio()" required disabled/>
 
                                             <label for="terminos">Acepto los <a href="#" title="Terminos Licencia" onClick="verTerminos()">Términos y Condiciones</a><br>y la <a href="#" title="Terminos Licencia" onClick="verPolitica()">Politica y Privacidad de datos</a></label>
                                         </td>

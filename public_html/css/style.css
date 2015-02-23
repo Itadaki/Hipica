@@ -49,17 +49,13 @@ body{
     box-shadow: rgba(0,0,0,0.3) 0px 0px 20px 0px ;
 }
 h1, h2{font-family: Ovo;}
-/*p{font-size: 16px;}*/
 p{font-size: 1em;}
 a{
     text-decoration: none;
     font-weight: bold;
-    /*color: #6B9DA4;*/
-    /*color: #8ca46a;*/
     color: #4b755b;
 }
 a:hover, a:visited{font-weight: normal; text-decoration:underline;}
-/*a:visited{color: #6aa47f;}*/
 a:visited{ color: #304a39; }
 .cabeza{
     color:white !important;
@@ -81,25 +77,22 @@ header.main h1{
     top: 70px;
     left: 175px;
     font-family: Vibes;
-    /*font-size: 75px;*/
     font-size: 4.6875em;
 }
 header.main p{
     top: 145px;
     left: 230px;
     font-family: Ovo;
-    /*font-size: 22px;*/
     font-size: 1.375em;
 }
 header.main img{
     left: 45px;
     top: 20px;
     height: 150px;
-    /*    -webkit-filter: drop-shadow(0 0 1px white);
-        filter: drop-shadow(0 0 1px white);*/
 }
 header.main #buscador{
-    right:5px !important;
+    right:15px ;
+    top: 15px;
     position:absolute;
 }
 
@@ -119,23 +112,13 @@ nav ul li a{
     color: black !important; /*Previene del cambio de color por :visited*/
     transition: border .25s;
     text-decoration: none;
-    display: inline-block;/*se convierte en bloque y le afecta width y height*/
+    display: inline-block;/*Se convierte en bloque y le afecta width y height*/
     height: 35px;
     line-height: 40px; /*Altura de cada linea == altura == alineado vertical*/
     width: 175px;
-    /*font-size:20px;*/
     font-size:1.25em;
     border-bottom: 5px solid #e9f1d7;
 }
-/* VIEJO ESTILO
-nav ul li a:hover, nav ul li a.activo{
-    font-weight: bold;
-    color:white !important; Previene del cambio de color por a:visited
-    background-position: 0px 0px;
-    background: #6aa47f;
-    background: #528063;
-    text-decoration:none;
-}*/
 nav ul li a:hover, nav ul li a.activo{
     font-weight: bold;
     text-decoration:none;
@@ -178,10 +161,8 @@ main>section  img.right{
 
 /*Estilos del pie*/
 footer.main{
-    /*height: 50px;*/
     background: #e9f1d7;
     text-align: center;
-
 }
 
 /*Estilos de publicidad*/
@@ -299,17 +280,13 @@ div#mapa{
     0% {background-position: -50px 0;}
     100% {background-position: 600px 0;}
 }
-
+/*Politica de cookies*/
 #cookies{
     height: 60px;
     min-width: 1024px;
     width: 100%;
-    /*background: #6aa47f;*/
     background: #528063;
-/*    position: fixed;
-    top: 0;*/
     color: white;
-    /*font-size: 13px;*/
     font-size: 0.8125em;
     text-align: center;
     transition: height 1s;
@@ -326,17 +303,14 @@ div#mapa{
     font-weight: bold;
 }
 #cookies a{color:white;text-decoration: underline;}
+/*Saludo al visitante*/
 #saludo{
     transition: height 1s, padding 1s;
     height: 40px;
     width: 150px;
     padding: 10px;
-    /*background: #6aa47f;*/
     background: #528063;
-/*    position: fixed;
-    top: 0;*/
     color: white;
-    /*font-size: 13px;*/
     font-size: 13px;
     text-align: center;
     position: fixed;
@@ -344,11 +318,6 @@ div#mapa{
     left: 0;
     overflow: hidden;
 }
-/*#saludo div{
-    position: absolute;
-    top: 2px;
-    right: 2px;
-}*/
 #saludo div::before{
     position: absolute;
     top: 0px;

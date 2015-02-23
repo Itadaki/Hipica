@@ -22,7 +22,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-/*#contacto table{margin: 0 auto;}*/
+article table{border:0px;}
+.asterisco{font-size:0.75em;}
 #contacto td{
     margin: 5px;
     padding: 2.5px;
@@ -36,11 +37,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     transition: max-height 2s ease-in-out;
     overflow:hidden;
 }
-.asterisco{
-    /*font-size:12px;*/
-    font-size:0.75em;
-}
 #contacto tr.open div {max-height: 100px;}
-article table{
-    border:0px;
-}
