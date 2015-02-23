@@ -24,7 +24,7 @@
  */
 
 var mensaje = '';
-
+var correcto = true;
 /**
  * @description Comprueba todos los campos obligatorios y activa la casilla de terminos<br>
  * Si se vacia algún campo se desactiva y desmarca la casilla de terminos
@@ -57,7 +57,12 @@ function activarEnvio() {
  */
 function validar() {
     mensaje = '';
-    if (validarNombre() && validarEmail() && validarFijo() && validarMovil()) {
+    correcto = true;
+    validarNombre();
+    validarEmail();
+    validarFijo();
+    validarMovil();
+    if (correcto) {
         if (checkCookie('politica_cookies')) {
             setCookie('nombre', document.getElementById('nombre').value, 365);
             setCookie('apellidos', document.getElementById('apellido1').value + ' ' + document.getElementById('apellido2').value, 365);
@@ -79,10 +84,10 @@ function validarNombre() {
     if (!expresion.test(document.getElementById('nombre').value)
             || !expresion.test(document.getElementById('apellido1').value)
             || !expresion.test(document.getElementById('apellido2').value)) {
-        mensaje += 'Nombre y/o apellidos invalidos<br>';
-        return false;
+        mensaje += 'Nombre y/o apellidos inválidos<br>';
+        correcto = false;
     }
-    return true;
+//    return true;
 }
 /**
  * @description Valida el campo de email
@@ -90,39 +95,26 @@ function validarNombre() {
  */
 function validarEmail() {
     var expresion = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    if (expresion.test(document.getElementById('email').value)) {
-        return true;
+    if (!expresion.test(document.getElementById('email').value)) {
+        mensaje += 'Email inválido<br>';
+        correcto = false;
     }
-    mensaje += 'Email invalido<br>';
-    return false;
+
 }
-/**
- * @description Valida los campos de telefono
- * @returns {Boolean}
- */
-//function validarTelefonos() {
-//    var expresion = /^(9|6)\d{8}$/;
-//    if (expresion.test(document.getElementById('fijo').value) && expresion.test(document.getElementById('movil').value)) {
-//        return true;
-//    }
-//    return false;
-//}
 
 function validarMovil() {
     var expresion = /^6\d{8}$/;
-    if (expresion.test(document.getElementById('movil').value)) {
-        return true;
+    if (!expresion.test(document.getElementById('movil').value)) {
+        mensaje += 'Telefono movil inválido<br>';
+        correcto = false;
     }
-    mensaje += 'Telefono movil invalido<br>';
-    return false;
 }
 
 function validarFijo() {
     var expresion = /^9\d{8}$/;
     var fijo = document.getElementById('fijo');
-    if ((fijo.value !== '' && expresion.test(fijo.value)) || fijo.value === '') {
-        return true;
+    if (!expresion.test(fijo.value)) {
+        mensaje += 'Telefono fijo inválido<br>';
+        correcto = false;
     }
-    mensaje += 'Telefono fijo invalido<br>';
-    return false;
 }
