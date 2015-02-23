@@ -87,7 +87,6 @@ function validarNombre() {
         mensaje += 'Nombre y/o apellidos inválidos<br>';
         correcto = false;
     }
-//    return true;
 }
 /**
  * @description Valida el campo de email
@@ -101,7 +100,10 @@ function validarEmail() {
     }
 
 }
-
+/**
+ * @description Valida el campo de telefono movil
+ * @returns {Boolean}
+ */
 function validarMovil() {
     var expresion = /^6\d{8}$/;
     if (!expresion.test(document.getElementById('movil').value)) {
@@ -109,11 +111,14 @@ function validarMovil() {
         correcto = false;
     }
 }
-
+/**
+ * @description Valida el campo de telefono fijo
+ * @returns {Boolean}
+ */
 function validarFijo() {
     var expresion = /^9\d{8}$/;
     var fijo = document.getElementById('fijo');
-    if (!expresion.test(fijo.value)) {
+    if (fijo.value !== '' && !expresion.test(fijo.value)) {
         mensaje += 'Telefono fijo inválido<br>';
         correcto = false;
     }
